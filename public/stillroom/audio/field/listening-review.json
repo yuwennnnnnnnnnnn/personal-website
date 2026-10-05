@@ -1,0 +1,86 @@
+[
+  {
+    "id": 563379,
+    "checks": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "notes": "",
+    "reviewer": "user",
+    "decision": "connected"
+  },
+  {
+    "id": 332271,
+    "checks": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "notes": "",
+    "reviewer": "user",
+    "decision": "connected"
+  },
+  {
+    "id": 631602,
+    "checks": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "notes": "",
+    "reviewer": "user",
+    "decision": "connected"
+  },
+  {
+    "id": 434561,
+    "checks": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "notes": "没听见飞机和车辆",
+    "reviewer": "user",
+    "decision": "connected"
+  },
+  {
+    "id": 648858,
+    "checks": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "notes": "",
+    "reviewer": "user",
+    "decision": "connected"
+  },
+  {
+    "id": 197211,
+    "checks": [
+      false,
+      false,
+      false,
+      true
+    ],
+    "notes": "这个听起来像是晚上，不够糟杂",
+    "reviewer": "user",
+    "decision": "replacement-needed"
+  },
+  {
+    "id": 209302,
+    "checks": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "notes": "水下录音，不合适作为主声音",
+    "reviewer": "user",
+    "decision": "replacement-needed"
+  }
+]

@@ -1,0 +1,10 @@
+docs
+previews
+scripts
+public/screenshots
+.git
+.env*
+
+public/stillroom/audio/*.wav
+
+public/stillroom/audio/field/*.wav

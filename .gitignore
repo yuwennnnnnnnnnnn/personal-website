@@ -1,0 +1,14 @@
+.vercel/
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+*.log
+previews/
+public/screenshots/
+docs/figma/
+# Disconnected synthesized sound experiments (live scenes use field recordings).
+public/stillroom/audio/*.wav
+
+public/stillroom/audio/field/*.wav

@@ -1,0 +1,77 @@
+[
+  {
+    "file": "events/footsteps-0.wav",
+    "source": "round3/museum-steps.mp3",
+    "source_range": [
+      8,
+      13.0
+    ],
+    "duration": 5.0,
+    "channels": 2,
+    "gain_db": 22.08,
+    "peak_db": -12.0,
+    "fade_seconds": 0.16,
+    "license": "CC0",
+    "review": "Source approved by user; these extracted excerpts need final in-context listening. No agent listening claimed."
+  },
+  {
+    "file": "events/footsteps-1.wav",
+    "source": "round3/museum-steps.mp3",
+    "source_range": [
+      32,
+      38.0
+    ],
+    "duration": 6.0,
+    "channels": 2,
+    "gain_db": 25.09,
+    "peak_db": -12.0,
+    "fade_seconds": 0.16,
+    "license": "CC0",
+    "review": "Source approved by user; these extracted excerpts need final in-context listening. No agent listening claimed."
+  },
+  {
+    "file": "events/footsteps-2.wav",
+    "source": "round3/museum-steps.mp3",
+    "source_range": [
+      61,
+      66.0
+    ],
+    "duration": 5.0,
+    "channels": 2,
+    "gain_db": 24.34,
+    "peak_db": -12.0,
+    "fade_seconds": 0.16,
+    "license": "CC0",
+    "review": "Source approved by user; these extracted excerpts need final in-context listening. No agent listening claimed."
+  },
+  {
+    "file": "events/tableware-0.wav",
+    "source": "round3/cup-a.mp3",
+    "source_range": [
+      0,
+      0.3902083333333333
+    ],
+    "duration": 0.3902083333333333,
+    "channels": 2,
+    "gain_db": -9.59,
+    "peak_db": -12.0,
+    "fade_seconds": 0.004,
+    "license": "CC0",
+    "review": "Source approved by user; these extracted excerpts need final in-context listening. No agent listening claimed."
+  },
+  {
+    "file": "events/tableware-1.wav",
+    "source": "round3/cup-b.mp3",
+    "source_range": [
+      0,
+      0.7022916666666666
+    ],
+    "duration": 0.7022916666666666,
+    "channels": 2,
+    "gain_db": -8.52,
+    "peak_db": -12.0,
+    "fade_seconds": 0.004,
+    "license": "CC0",
+    "review": "Source approved by user; these extracted excerpts need final in-context listening. No agent listening claimed."
+  }
+]

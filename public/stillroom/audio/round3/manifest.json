@@ -1,0 +1,71 @@
+[
+  {
+    "id": 529713,
+    "author": "Anya_Media",
+    "page": "https://freesound.org/people/Anya_Media/sounds/529713/",
+    "title": "Footsteps in museum",
+    "role": "Gallery \u00b7 quiet footsteps",
+    "description": "Empty museum recording; floor material and reverberation must be checked by listening. Not Barnes audio.",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "preview": "https://cdn.freesound.org/previews/529/529713_2010973-hq.mp3",
+    "local": "/stillroom/audio/round3/museum-steps.mp3",
+    "status": "connected-user-reviewed",
+    "review": {
+      "id": 529713,
+      "checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "notes": ""
+    },
+    "processed": "/stillroom/audio/events/footsteps-0.wav"
+  },
+  {
+    "id": 568757,
+    "author": "bowlingballout",
+    "page": "https://freesound.org/people/bowlingballout/sounds/568757/",
+    "title": "Cup and Saucer",
+    "role": "Nighthawks \u00b7 separate ceramic detail",
+    "description": "Short event, not continuous ambience. Check peak and tone; do not loop mechanically.",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "preview": "https://cdn.freesound.org/previews/568/568757_485650-hq.mp3",
+    "local": "/stillroom/audio/round3/cup-a.mp3",
+    "status": "connected-user-reviewed",
+    "review": {
+      "id": 568757,
+      "checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "notes": ""
+    },
+    "processed": "/stillroom/audio/events/tableware-0.wav"
+  },
+  {
+    "id": 568758,
+    "author": "bowlingballout",
+    "page": "https://freesound.org/people/bowlingballout/sounds/568758/",
+    "title": "Cup and Saucer 2",
+    "role": "Nighthawks \u00b7 second ceramic variation",
+    "description": "Short event, not continuous ambience. Needs listening alongside the base caf\u00e9 recording.",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "preview": "https://cdn.freesound.org/previews/568/568758_485650-hq.mp3",
+    "local": "/stillroom/audio/round3/cup-b.mp3",
+    "status": "connected-user-reviewed",
+    "review": {
+      "id": 568758,
+      "checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "notes": ""
+    },
+    "processed": "/stillroom/audio/events/tableware-1.wav"
+  }
+]

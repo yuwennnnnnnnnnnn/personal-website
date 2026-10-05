@@ -1,0 +1,102 @@
+/* Shared portfolio design system. Layout rules live in styles.css. */
+@font-face{font-family:Inter;src:url('/assets/fonts/inter-400.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url('/assets/fonts/inter-600.ttf') format('truetype');font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:Inter;src:url('/assets/fonts/inter-500.ttf') format('truetype');font-style:normal;font-weight:500;font-display:swap}
+:root{
+ --font-primary:Inter,Arial,sans-serif;--weight-body:400;--weight-medium:500;--weight-heading:600;
+ --text-page:48px;--text-section:28px;--text-card:24px;--text-title:20px;--text-lead:20px;--text-body:16px;--text-secondary:14px;--text-meta:13px;--text-control:14px;
+ --leading-heading:1.2;--leading-title:1.3;--leading-body:1.6;
+ --ink:#242424;--body-text:#404040;--muted:#686868;--blue:#254bdf;--paper:#f7f7f5;--surface:#fff;--line:#dfe1db;
+ --space-4:4px;--space-8:8px;--space-12:12px;--space-16:16px;--space-24:24px;--space-32:32px;--space-48:48px;--space-64:64px;--space-96:96px;--radius-card:24px;
+ font-family:var(--font-primary);font-size:var(--text-body);font-weight:var(--weight-body);line-height:var(--leading-body);font-synthesis:none;color:var(--ink);background:var(--paper)
+}
+body,button,input,select,textarea{font-family:var(--font-primary)}
+p,li,dd{font-size:var(--text-body);font-weight:var(--weight-body);line-height:var(--leading-body);color:var(--body-text)}
+h1{font-size:var(--text-page);font-weight:var(--weight-heading);line-height:var(--leading-heading)}
+h2{font-size:var(--text-section);font-weight:var(--weight-heading);line-height:var(--leading-heading)}
+h3{font-size:var(--text-card);font-weight:var(--weight-heading);line-height:var(--leading-heading)}
+h4,strong,b{font-weight:var(--weight-medium)}
+h4{font-size:var(--text-title);line-height:var(--leading-title)}
+small,figcaption{font-size:var(--text-secondary);line-height:var(--leading-body);font-weight:var(--weight-body)}
+.accent-text{color:var(--blue)}
+.site-header nav a,button,select,.text-link,.return-work,.resume-button,.toc-links a,.toc-home,.case-directory summary{font-size:var(--text-control);font-weight:var(--weight-medium);line-height:1.5}
+.brand strong,.entry-title,.education-entry h3{font-size:var(--text-title);font-weight:var(--weight-medium);line-height:var(--leading-title);color:var(--ink)}
+.brand small,.eyebrow,.art-note,.tags span,.status,.entry-date,.project-meta dt,.project-meta dd,.role-note,.source-note,.outcome-disclosure,.lightbox-help,.single-preview-label{font-size:var(--text-meta);font-weight:var(--weight-body);line-height:1.6}
+.brand small,.entry-date,.project-meta dt,.role-note,.source-note,.outcome-disclosure{color:var(--muted)}
+.about-copy .about-lead,.overview-subtitle,.intro-bottom p,.goal-list p{font-size:var(--text-lead);font-weight:var(--weight-body);line-height:1.5}
+.about-card h2,.card-copy h3,.finding-grid h3,.decision h3,.web-adaptation h3,.component-note h3,.art-caption p{font-size:var(--text-card);font-weight:var(--weight-heading);line-height:var(--leading-heading);color:var(--ink)}
+.university-name,.entry-organization,.exchange-programs p,.exchange-programs h3,.skill-group h3,.editorial-note p,.scope-note p,.finding-action,.site-footer,.footer-name>.muted,.evidence-title span,.overview-changes,.lightbox-toolbar p{font-size:var(--text-secondary);font-weight:var(--weight-body);line-height:var(--leading-body);color:var(--muted)}
+.skill-group p,.about-copy p,.entry-body p,.card-copy p,.finding-grid p,.guide-change p,.web-adaptation p,.component-note p{font-size:var(--text-body);font-weight:var(--weight-body);line-height:var(--leading-body)}
+.outcome-grid strong{font-size:var(--text-section);font-weight:var(--weight-heading);line-height:1.2}
+.outcome-grid span,.current-chapter{font-size:var(--text-meta);font-weight:var(--weight-body)}
+.placeholder-mark{font-size:var(--text-page);font-weight:var(--weight-body)}
+.slot-number,.goal-list span,.decision-heading>span,.overview-changes b{font-size:var(--text-title);font-weight:var(--weight-medium)}
+.toc-links a,.toc-home{color:var(--muted);white-space:normal}
+.toc-links a[aria-current],.toc-links a:hover,.toc-home:hover{color:var(--ink)}
+.about-card,.finding-grid>div,.component-note{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);padding:var(--space-32)}
+.about-card-grid .about-card{padding:var(--space-32);border-color:var(--line)}
+.about-information,.about-card-grid{gap:var(--space-24)}
+.about-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+.about-card h2,.about-card-grid h2{margin-bottom:var(--space-24)}
+.education-entry{gap:var(--space-16)}
+.education-entry h3{margin:0 0 var(--space-8)}
+.education-entry+.education-entry,.exchange-programs,.skill-group+.skill-group{margin-top:var(--space-24);padding-top:var(--space-24);border-top:1px solid var(--line)}
+.about-copy h1{margin-bottom:var(--space-24)}
+.site-header nav{gap:var(--space-32)}
+.site-header,.site-footer{padding-block:var(--space-32)}
+.shell{width:min(1248px,calc(100% - 128px))}.about-page{max-width:1120px}
+.case-layout{grid-template-columns:208px minmax(0,1fr);gap:var(--space-48)}
+.overview-grid{grid-template-columns:minmax(0,1.3fr) minmax(220px,1fr)}
+.art-caption{max-width:52%}.art-caption .eyebrow{max-width:100%}.art-note{max-width:170px}.card-phone{right:var(--space-32)}
+.lightbox-toolbar p{min-width:0}.case-directory summary{flex-wrap:wrap}
+@media(max-width:1100px){.shell{width:calc(100% - 64px)}.case-layout{gap:var(--space-32)}.overview-grid{grid-template-columns:1fr}.overview-art{display:block}.art-caption{max-width:48%}.card-phone{width:135px;right:var(--space-24)}}
+@media(max-width:900px){.case-layout{display:block}.overview-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){
+ :root{--text-page:32px;--text-section:24px;--text-card:22px;--text-title:18px;--text-lead:18px}
+ .shell{width:calc(100% - 48px)}
+ .about-card-grid{grid-template-columns:1fr;align-items:stretch}
+ .about-card,.about-card-grid .about-card,.finding-grid>div,.component-note{padding:var(--space-24);border-radius:var(--radius-card)}
+ .about-information,.about-card-grid{gap:var(--space-24)}
+ .site-header{flex-wrap:wrap;gap:var(--space-24);padding-block:var(--space-24)}
+ .site-header nav{width:100%;gap:var(--space-16);justify-content:space-between}
+ .overview-grid,.project-grid{grid-template-columns:1fr}
+ .site-footer{flex-wrap:wrap;gap:var(--space-16)}
+ .card-phone{width:130px;right:var(--space-16);top:64px}.art-caption{max-width:52%}.art-caption p{max-width:100%}
+ .bybit-art{padding:var(--space-24);height:360px}.art-caption .eyebrow{max-width:100%}.art-note{max-width:140px}
+ .outcome-grid{grid-template-columns:1fr 1fr}.outcome-grid>div{padding:var(--space-24) var(--space-12)}
+ .toc-links{gap:var(--space-16)}
+}
+
+.resume-button{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-8);width:max-content;min-height:48px;padding:0 var(--space-24);font-size:var(--text-control);font-weight:var(--weight-medium);line-height:1.3;color:var(--surface)}
+.resume-button span{display:inline-block;margin:0;flex:none;font-size:16px;line-height:1}
+.case-content .source-note,.case-content .outcome-disclosure{font-size:var(--text-meta);font-weight:var(--weight-body);line-height:var(--leading-body)}
+
+/* School and date share a compact, right-aligned metadata row. */
+.education-entry{align-items:center;row-gap:var(--space-8)}
+.education-entry .university-logo{margin-top:0}
+.education-entry h3{margin:0}
+.education-meta{grid-column:1 / -1;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--space-8);align-items:baseline}
+.education-meta .entry-date{margin:0;text-align:right}
+.exchange-row{display:flex;justify-content:space-between;gap:var(--space-8)}
+.exchange-programs .exchange-row span{white-space:normal}
+.exchange-row .entry-date{text-align:right;flex-shrink:0}
+@media(max-width:760px){.education-meta{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.exchange-programs h3{font-weight:var(--weight-medium)}
+
+/* Summary and expanded content share the exact same grid tracks. */
+.experience-entry{--experience-columns:190px minmax(0,1fr) 32px;--experience-gap:var(--space-24)}
+.experience-entry summary,.experience-entry .entry-body{display:grid;grid-template-columns:var(--experience-columns);column-gap:var(--experience-gap)}
+.experience-entry[open] summary{padding-bottom:0}
+.experience-entry .entry-body{row-gap:var(--space-16);padding-block:var(--space-16) var(--space-24)}
+.entry-body>*{grid-column:2;min-width:0}
+.entry-body .text-link{justify-self:start;margin:0}
+@media(max-width:1100px){.experience-entry{--experience-columns:165px minmax(0,1fr) 32px}}
+@media(max-width:760px){.experience-entry{--experience-columns:minmax(0,1fr) 30px;--experience-gap:var(--space-12)}.entry-body>*{grid-column:1}}
+
+/* Body text and secondary labels use the shared neutral palette. */
+.about-copy p:not(.about-lead),.story-section>p:not(.eyebrow),.decision>p,.editorial-note p,.finding-grid p,.guide-change p,.scope-note p,.web-adaptation p,.component-note p,.entry-body p,.skill-group p,.card-copy p,.holding-page>p:not(.eyebrow){color:var(--body-text)}
+.about-copy .about-lead{color:var(--body-text)}
+.entry-title,.education-entry h3,.brand strong{color:var(--ink)}
+.entry-organization,.university-name,.entry-date,.eyebrow,.project-meta dt,.project-meta dd,.skill-group h3,.exchange-programs h3,.exchange-row .entry-date,.art-note,.status{color:var(--muted)}
+/* Resume button has a fixed vertical rhythm and content-determined width. */
+.resume-download{padding-bottom:0}

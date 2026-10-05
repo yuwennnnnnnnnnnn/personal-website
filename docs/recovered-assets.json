@@ -1,0 +1,114 @@
+[
+  {
+    "file": "blik-code.png",
+    "source": "https://static.wixstatic.com/media/f2c7ed_972be9e4f42844858bd09023db214dd3~mv2.png",
+    "archive": "docs/wix/35.png",
+    "crop": [
+      2634,
+      650,
+      3232,
+      1954
+    ],
+    "width": 598,
+    "height": 1304,
+    "method": "Unmodified crop of original published portfolio export; not a new Figma export."
+  },
+  {
+    "file": "blik-confirm.png",
+    "source": "https://static.wixstatic.com/media/f2c7ed_972be9e4f42844858bd09023db214dd3~mv2.png",
+    "archive": "docs/wix/35.png",
+    "crop": [
+      4242,
+      650,
+      4844,
+      1954
+    ],
+    "width": 602,
+    "height": 1304,
+    "method": "Unmodified crop of original published portfolio export; not a new Figma export."
+  },
+  {
+    "file": "blik-review.png",
+    "source": "https://static.wixstatic.com/media/f2c7ed_972be9e4f42844858bd09023db214dd3~mv2.png",
+    "archive": "docs/wix/35.png",
+    "crop": [
+      1036,
+      650,
+      1637,
+      1954
+    ],
+    "width": 601,
+    "height": 1304,
+    "method": "Unmodified crop of original published portfolio export; not a new Figma export."
+  },
+  {
+    "file": "verification-before.png",
+    "source": "https://static.wixstatic.com/media/f2c7ed_fd53820b769e498aabe93788f5d8996e~mv2.png",
+    "archive": "docs/wix/37.png",
+    "crop": [
+      1036,
+      650,
+      1637,
+      1953
+    ],
+    "width": 601,
+    "height": 1303,
+    "method": "Unmodified crop of original published portfolio export; not a new Figma export."
+  },
+  {
+    "file": "verification-notice.png",
+    "source": "https://static.wixstatic.com/media/f2c7ed_fd53820b769e498aabe93788f5d8996e~mv2.png",
+    "archive": "docs/wix/37.png",
+    "crop": [
+      2760,
+      546,
+      3410,
+      1849
+    ],
+    "width": 650,
+    "height": 1303,
+    "method": "Unmodified crop of original published portfolio export; not a new Figma export."
+  },
+  {
+    "file": "upload-entry.png",
+    "source": "https://static.wixstatic.com/media/f2c7ed_fd53820b769e498aabe93788f5d8996e~mv2.png",
+    "archive": "docs/wix/37.png",
+    "crop": [
+      3512,
+      546,
+      4136,
+      1849
+    ],
+    "width": 624,
+    "height": 1303,
+    "method": "Unmodified crop of original published portfolio export; not a new Figma export."
+  },
+  {
+    "file": "document-form.png",
+    "source": "https://static.wixstatic.com/media/f2c7ed_10089b7797394c40beeae84690287a05~mv2.png",
+    "archive": "docs/wix/33.png",
+    "crop": [
+      1032,
+      2280,
+      1676,
+      3662
+    ],
+    "width": 644,
+    "height": 1382,
+    "method": "Unmodified crop of original published portfolio export; not a new Figma export."
+  },
+  {
+    "file": "web-setup.png",
+    "source": "https://static.wixstatic.com/media/f2c7ed_80a769bf731f4e0b9f5a81aa3a5eeaf1~mv2.png",
+    "archive": "docs/wix/38.png",
+    "crop": [
+      2081,
+      1215,
+      2777,
+      1963
+    ],
+    "width": 696,
+    "height": 748,
+    "method": "Unmodified crop of original published portfolio export; not a new Figma export."
+  }
+]

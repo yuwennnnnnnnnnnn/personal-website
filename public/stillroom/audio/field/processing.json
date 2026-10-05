@@ -1,0 +1,101 @@
+[
+  {
+    "file": "field/gallery.wav",
+    "channels": 2,
+    "duration": 44.328,
+    "gain_db": 6.69,
+    "rms_db": -30.0,
+    "peak_db": -11.01,
+    "loop_overlap_seconds": 3,
+    "source": "local CC0 public MP3 preview",
+    "review": "User approved all four listening checks; modified loop requires final listening"
+  },
+  {
+    "file": "field/cafe.wav",
+    "channels": 2,
+    "duration": 147.584,
+    "gain_db": 24.05,
+    "rms_db": -32.64,
+    "peak_db": -6.0,
+    "loop_overlap_seconds": 3,
+    "source": "local CC0 public MP3 preview",
+    "review": "User approved all four listening checks; modified loop requires final listening"
+  },
+  {
+    "file": "field/pond.wav",
+    "channels": 1,
+    "duration": 188.547,
+    "gain_db": 10.87,
+    "rms_db": -36.31,
+    "peak_db": -6.0,
+    "loop_overlap_seconds": 3,
+    "source": "local CC0 public MP3 preview",
+    "review": "User approved all four listening checks; modified loop requires final listening"
+  },
+  {
+    "file": "field/river.wav",
+    "channels": 2,
+    "duration": 279.648,
+    "gain_db": 34.27,
+    "rms_db": -29.16,
+    "peak_db": -6.0,
+    "loop_overlap_seconds": 3,
+    "source": "local CC0 public MP3 preview",
+    "review": "User approved all four listening checks; modified loop requires final listening"
+  },
+  {
+    "file": "field/sea.wav",
+    "channels": 2,
+    "duration": 211.253,
+    "gain_db": -2.02,
+    "rms_db": -26.36,
+    "peak_db": -6.0,
+    "loop_overlap_seconds": 3,
+    "source": "local CC0 public MP3 preview",
+    "review": "User approved all four listening checks; modified loop requires final listening"
+  },
+  {
+    "file": "field/roof-city.wav",
+    "channels": 2,
+    "duration": 598.6,
+    "gain_db": 15.18,
+    "rms_db": -34.14,
+    "peak_db": -6.0,
+    "loop_overlap_seconds": 3,
+    "source": "local CC0 public MP3 preview",
+    "review": "User approved all four listening checks; modified loop requires final listening"
+  },
+  {
+    "file": "field/pool-morning.wav",
+    "channels": 2,
+    "duration": 171.256,
+    "gain_db": 16.82,
+    "rms_db": -28.0,
+    "peak_db": -11.54,
+    "loop_overlap_seconds": 3,
+    "source": "local CC0 public MP3 preview",
+    "review": "User approved all four listening checks; modified loop requires final listening"
+  },
+  {
+    "file": "field/wind.wav",
+    "channels": 2,
+    "duration": 117.253,
+    "gain_db": 2.97,
+    "rms_db": -33.0,
+    "peak_db": -14.42,
+    "loop_overlap_seconds": 3,
+    "source": "local CC0 public MP3 preview",
+    "review": "User approved all four listening checks; modified loop requires final listening"
+  },
+  {
+    "file": "field/insects.wav",
+    "channels": 1,
+    "duration": 25.713,
+    "gain_db": -24.68,
+    "rms_db": -36.0,
+    "peak_db": -22.72,
+    "loop_overlap_seconds": 3,
+    "source": "CC BY 4.0 public MP3 preview; flcellogrl #199509; attribution required",
+    "review": "User approved all four listening checks; modified loop requires final listening"
+  }
+]

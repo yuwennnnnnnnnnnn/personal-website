@@ -1,0 +1,14 @@
+{
+  "name": "yuwen-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check public/app.js && node --check public/case-study.js && node --check public/about.js && node --check public/about-motion.js && node --check public/stillroom/main.js && node --check public/stillroom/audio.js && node --check public/stillroom/config.js && node --check public/stillroom/mini-window.js && node --check public/stillroom/recording-review.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

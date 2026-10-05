@@ -1,0 +1,34 @@
+[
+  {
+    "id": 111628,
+    "title": "Nighthawks",
+    "artist_display": "Edward Hopper (American, 1882\u20131967)",
+    "date_display": "1942",
+    "is_public_domain": false,
+    "image_id": "831a05de-d3f6-f4fa-a460-23008dd58dda"
+  },
+  {
+    "id": 27992,
+    "title": "A Sunday on La Grande Jatte \u2014 1884",
+    "artist_display": "Georges Seurat (French, 1859\u20131891)",
+    "date_display": "1884\u201386, border added 1888\u201389",
+    "is_public_domain": true,
+    "image_id": "2d484387-2509-5e8e-2c43-22f9981972eb"
+  },
+  {
+    "id": 87088,
+    "title": "Water Lily Pond",
+    "artist_display": "Claude Monet (French, 1840\u20131926)",
+    "date_display": "1900",
+    "is_public_domain": true,
+    "image_id": "8534685d-1102-e1e3-e194-94f6e925e8b0"
+  },
+  {
+    "id": 24645,
+    "title": "Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave, from the series \"Thirty-Six Views of Mount Fuji (Fugaku sanj\u016brokkei)\"",
+    "artist_display": "Katsushika Hokusai \u845b\u98fe \u5317\u658e \nJapanese, 1760-1849",
+    "date_display": "1830/33",
+    "is_public_domain": true,
+    "image_id": "b3974542-b9b4-7568-fc4b-966738f61d78"
+  }
+]

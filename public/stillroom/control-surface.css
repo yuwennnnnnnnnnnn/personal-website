@@ -1,0 +1,4 @@
+/* Shared floating surface for both artwork interfaces. */
+#player,#mini-controls,#settings{background:rgba(23,28,27,.8);color:#eee;border:1px solid rgba(255,255,255,.15);border-radius:12px;box-shadow:0 5px 20px #0003;backdrop-filter:blur(10px)}
+#player button,#mini-controls button{font-size:16px;line-height:1;min-width:34px;min-height:34px;border:0;border-radius:6px;background:transparent;color:inherit}
+#player button:hover,#mini-controls button:hover{background:#ffffff15}

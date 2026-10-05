@@ -1,0 +1,168 @@
+[
+  {
+    "id": 563379,
+    "scene": "gallery",
+    "author": "visionear",
+    "page": "https://freesound.org/people/visionear/sounds/563379/",
+    "preview": "https://cdn.freesound.org/previews/563/563379_10869493-lq.mp3",
+    "license": "CC0",
+    "status": "connected-user-reviewed",
+    "download": "public MP3 preview, not original",
+    "local": "/stillroom/audio/candidates/gallery.mp3",
+    "processed": "/stillroom/audio/field/gallery.wav",
+    "review": {
+      "id": 563379,
+      "checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "notes": "",
+      "reviewer": "user",
+      "decision": "connected"
+    }
+  },
+  {
+    "id": 332271,
+    "scene": "cafe",
+    "author": "evsecrets",
+    "page": "https://freesound.org/people/evsecrets/sounds/332271/",
+    "preview": "https://cdn.freesound.org/previews/332/332271_2367065-lq.mp3",
+    "license": "CC0",
+    "status": "connected-user-reviewed",
+    "download": "public MP3 preview, not original",
+    "local": "/stillroom/audio/candidates/cafe.mp3",
+    "processed": "/stillroom/audio/field/cafe.wav",
+    "review": {
+      "id": 332271,
+      "checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "notes": "",
+      "reviewer": "user",
+      "decision": "connected"
+    }
+  },
+  {
+    "id": 631602,
+    "scene": "pond",
+    "author": "TheWandermiles",
+    "page": "https://freesound.org/people/TheWandermiles/sounds/631602/",
+    "preview": "https://cdn.freesound.org/previews/631/631602_1696610-lq.mp3",
+    "license": "CC0",
+    "status": "connected-user-reviewed",
+    "download": "public MP3 preview, not original",
+    "local": "/stillroom/audio/candidates/pond.mp3",
+    "processed": "/stillroom/audio/field/pond.wav",
+    "review": {
+      "id": 631602,
+      "checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "notes": "",
+      "reviewer": "user",
+      "decision": "connected"
+    }
+  },
+  {
+    "id": 434561,
+    "scene": "river",
+    "author": "KieranKeegan",
+    "page": "https://freesound.org/people/KieranKeegan/sounds/434561/",
+    "preview": "https://cdn.freesound.org/previews/434/434561_6616210-lq.mp3",
+    "license": "CC0",
+    "status": "connected-user-reviewed",
+    "download": "public MP3 preview, not original",
+    "local": "/stillroom/audio/candidates/river.mp3",
+    "processed": "/stillroom/audio/field/river.wav",
+    "review": {
+      "id": 434561,
+      "checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "notes": "\u6ca1\u542c\u89c1\u98de\u673a\u548c\u8f66\u8f86",
+      "reviewer": "user",
+      "decision": "connected"
+    }
+  },
+  {
+    "id": 648858,
+    "scene": "sea",
+    "author": "emainta",
+    "page": "https://freesound.org/people/emainta/sounds/648858/",
+    "preview": "https://cdn.freesound.org/previews/648/648858_8860118-lq.mp3",
+    "license": "CC0",
+    "status": "connected-user-reviewed",
+    "download": "public MP3 preview, not original",
+    "local": "/stillroom/audio/candidates/sea.mp3",
+    "processed": "/stillroom/audio/field/sea.wav",
+    "review": {
+      "id": 648858,
+      "checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "notes": "",
+      "reviewer": "user",
+      "decision": "connected"
+    }
+  },
+  {
+    "id": 197211,
+    "scene": "city",
+    "author": "ragamuffin",
+    "page": "https://freesound.org/people/ragamuffin/sounds/197211/",
+    "preview": "https://cdn.freesound.org/previews/197/197211_167260-lq.mp3",
+    "license": "CC0",
+    "status": "not-selected",
+    "download": "public MP3 preview, not original",
+    "local": "/stillroom/audio/candidates/city.mp3",
+    "review": {
+      "id": 197211,
+      "checks": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "notes": "\u8fd9\u4e2a\u542c\u8d77\u6765\u50cf\u662f\u665a\u4e0a\uff0c\u4e0d\u591f\u7cdf\u6742",
+      "reviewer": "user",
+      "decision": "replacement-needed"
+    }
+  },
+  {
+    "id": 209302,
+    "scene": "underwater",
+    "author": "felix.blume",
+    "page": "https://freesound.org/people/felix.blume/sounds/209302/",
+    "preview": "https://cdn.freesound.org/previews/209/209302_1661766-lq.mp3",
+    "license": "CC0",
+    "status": "not-selected",
+    "download": "public MP3 preview, not original",
+    "local": "/stillroom/audio/candidates/underwater.mp3",
+    "review": {
+      "id": 209302,
+      "checks": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "notes": "\u6c34\u4e0b\u5f55\u97f3\uff0c\u4e0d\u5408\u9002\u4f5c\u4e3a\u4e3b\u58f0\u97f3",
+      "reviewer": "user",
+      "decision": "replacement-needed"
+    }
+  }
+]
