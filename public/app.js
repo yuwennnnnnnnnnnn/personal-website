@@ -1,12 +1,14 @@
+import { initPageMotion } from './page-motion.js';
+import { handmaidenPage } from './handmaiden.js';
 import { aboutPage } from './about.js';
 import { bybitCase, initDirectory } from './case-study.js';
 history.scrollRestoration = 'manual';
 const assets = '/assets/bybit/';
 const imageSizes = {"combined-deposit.png": [600, 1300], "blik-confirm.png": [600, 1300], "verification-notice.png": [600, 1300], "blik-code.png": [600, 1300], "blik-review.png": [600, 1300], "before-method.png": [600, 1300], "before-amount.png": [600, 1300], "document-form.png": [637, 1378], "upload-entry.png": [600, 1300], "verification-before.png": [600, 1300], "web-setup.png": [684, 731]};
 const imageNodes = {"upload-entry.png": "82:82212", "verification-notice.png": "82:82295", "verification-before.png": "82:82443", "document-form.png": "82:81130", "web-setup.png": "82:82572", "blik-code.png": "82:81457", "blik-confirm.png": "82:81524", "blik-review.png": "82:81558"};
-const navigation = [{ label: 'WORK', href: '/' }, { label: 'ABOUT', href: '/about' }, { label: 'VISUAL WORKS', href: '/visual-works' }];
+const navigation = [{ label: 'WORK', href: '/' }, { label: 'ABOUT', href: '/about' }, { label: 'PLAY', href: '/visual-works' }];
 const path = location.pathname.replace(/\/$/, '') || '/';
-const active = path.startsWith('/work/') ? '/' : path;
+const active = path === '/the-handmaiden' ? '/visual-works' : path.startsWith('/work/') ? '/' : path;
 const arrow = '<span aria-hidden="true">↗</span>';
 const tags = items => `<div class="tags">${items.map(item => `<span>${item}</span>`).join('')}</div>`;
 const header = () => `<header class="site-header shell"><a class="brand" href="/" aria-label="Yuwen Chen — home"><span class="brand-square" aria-hidden="true"></span><span><strong>Yuwen Chen</strong><small>Product Designer</small></span></a><nav aria-label="Main navigation">${navigation.map(item => `<a href="${item.href}" ${active === item.href ? 'aria-current="page"' : ''}>${item.label}</a>`).join('')}</nav></header>`;
@@ -32,23 +34,24 @@ function placeholderPage(kind) {
   return `<main id="main" class="shell holding-page"><p class="eyebrow">${about ? 'A LITTLE MORE ABOUT ME' : 'EXPLORATIONS & EXPERIMENTS'}</p><h1>${about ? 'Behind the <span class="accent-text">design.</span>' : 'Visual <span class="accent-text">works.</span>'}</h1><span class="holding-square" aria-hidden="true"></span><h2>${about ? 'More about Yuwen Chen, coming soon.' : 'A collection in progress.'}</h2><p>${about ? 'This page will share my background and approach to design.' : 'Selected visual work will be added here.'}</p><a class="text-link" href="/">Explore selected work ↗</a></main>`;
 }
 function visualWorks() {
-  return `<main id="main" class="shell visual-works-page"><div class="holding-page visual-intro"><p class="eyebrow">EXPLORATIONS & EXPERIMENTS</p><h1>Visual <span class="accent-text">works.</span></h1></div><div class="project-grid"><article class="project-card"><a class="project-link" href="/listening-gallery"><div class="visual-cover"><img src="/assets/visual-works/listening-gallery.jpg" alt="Six paintings displayed with individual frames on The Listening Gallery's warm gallery wall" width="1240" height="827"><span class="card-arrow" aria-hidden="true">↗</span></div><div class="card-copy"><div class="card-title"><h3>The Listening Gallery</h3>${arrow}</div><p>Step into a painting. Let its sounds keep you company.</p>${tags(['Interactive web experience'])}<span class="text-link visual-explore">Explore project ${arrow}</span></div></a></article></div></main>`;
+  return `<main id="main" class="shell visual-works-page"><div class="holding-page visual-intro"><h1>Things I build for <span class="play-title-emphasis">the joy of building</span></h1><p class="play-intro-subtitle">Fun experiments, side projects, and creative explorations.</p></div><div class="project-grid"><article class="project-card"><a class="project-link" href="/listening-gallery"><div class="visual-cover"><img src="/assets/visual-works/listening-gallery.jpg" alt="Six paintings displayed with individual frames on The Listening Gallery's warm gallery wall" width="1240" height="827"></div><div class="card-copy"><div class="card-title"><h3>The Listening Gallery</h3></div><p>Step into a painting. Let its sounds keep you company.</p>${tags(['Interactive web experience'])}</div></a></article><article class="project-card"><a class="project-link" href="/the-handmaiden"><div class="visual-cover handmaiden-cover"><img src="/assets/handmaiden/imgScreenshot20240715At2036001.png" alt="Original purple-blue cover of The Handmaiden photobook" width="1774" height="1182"></div><div class="card-copy"><div class="card-title"><h3>The Handmaiden photobook</h3></div><p>Explore the film through the photo book.</p>${tags(['Book design', 'Graphic design'])}</div></a></article><article class="project-card"><a class="project-link" href="/poster-world"><div class="visual-cover poster-world-cover"><img src="/poster-world-cover.jpg?v=spring-festival" alt="Pink and lime Spring Festival poster floating among posters in Poster World" width="1080" height="716"></div><div class="card-copy"><div class="card-title"><h3>Poster World</h3></div><p>View all my experiments in poster design</p>${tags(['Graphic design', 'Interactive gallery'])}</div></a></article></div></main>`;
 }
 function preview() {
   const device = new URLSearchParams(location.search).get('device');
   if (device === 'desktop') return `<main id="main" class="single-preview"><div class="single-preview-label">1440px desktop preview · <a href="/preview">Desktop + mobile ↗</a></div><div class="preview-layout"><section><div class="desktop-preview"><iframe title="Desktop preview at 1440 pixels" width="1440" height="1300" src="${new URLSearchParams(location.search).get('page') === 'bybit' ? '/work/bybit' : '/'}"></iframe></div></section></div></main>`;
-  return `<main id="main" class="preview-page"><h1>Portfolio preview</h1><p>Live layouts at 1440px and 390px. Open a page directly to explore it at your own window size.</p><div class="preview-controls"><label>Page <select id="preview-route"><option value="/">WORK</option><option value="/work/bybit">BYBIT</option><option value="/about">ABOUT</option><option value="/visual-works">VISUAL WORKS</option></select></label><a href="/" id="open-preview" target="_blank" rel="noopener">Open page ↗</a></div><div class="preview-layout"><section><h2>Desktop · 1440px</h2><div class="desktop-preview"><iframe title="Desktop preview at 1440 pixels" width="1440" height="1040" src="/"></iframe></div></section><section><h2>Mobile · 390px</h2><div class="mobile-preview"><iframe title="Mobile preview at 390 pixels" width="390" height="844" src="/"></iframe></div></section></div></main>`;
+  return `<main id="main" class="preview-page"><h1>Portfolio preview</h1><p>Live layouts at 1440px and 390px. Open a page directly to explore it at your own window size.</p><div class="preview-controls"><label>Page <select id="preview-route"><option value="/">WORK</option><option value="/work/bybit">BYBIT</option><option value="/about">ABOUT</option><option value="/visual-works">PLAY</option></select></label><a href="/" id="open-preview" target="_blank" rel="noopener">Open page ↗</a></div><div class="preview-layout"><section><h2>Desktop · 1440px</h2><div class="desktop-preview"><iframe title="Desktop preview at 1440 pixels" width="1440" height="1040" src="/"></iframe></div></section><section><h2>Mobile · 390px</h2><div class="mobile-preview"><iframe title="Mobile preview at 390 pixels" width="390" height="844" src="/"></iframe></div></section></div></main>`;
 }
-const pageTitle = path === '/work/bybit' ? 'BYBIT — Fiat Deposit' : path === '/about' ? 'About' : path === '/visual-works' ? 'Visual Works' : path === '/preview' ? 'Preview' : 'Work';
+const pageTitle = path === '/the-handmaiden' ? 'The Handmaiden photobook' : path === '/work/bybit' ? 'BYBIT — Fiat Deposit' : path === '/about' ? 'About' : path === '/visual-works' ? 'Play' : path === '/preview' ? 'Preview' : 'Work';
 document.title = `${pageTitle} · Yuwen Chen — Product Designer`;
 const pageDescriptions = {
   '/': 'Yuwen Chen is a product designer. Explore selected work, including the BYBIT fiat deposit case study.',
   '/about': 'About Yuwen Chen, a product designer working across interaction, visual, and service design.',
-  '/visual-works': 'Visual works by Yuwen Chen, product designer.',
+  '/the-handmaiden': 'The Handmaiden photobook by Yuwen Chen. Film imagery, visual storytelling and book design.',
+  '/visual-works': 'Fun experiments, side projects, and creative explorations · Things I build for the joy of building',
   '/work/bybit': 'A BYBIT fiat deposit case study by Yuwen Chen, product designer.'
 };
 document.querySelector('meta[name="description"]').content = pageDescriptions[path] || pageDescriptions['/'];
-document.querySelector('#app').innerHTML = `<div id="top"></div>${path === '/preview' ? '' : header()}${path === '/work/bybit' ? bybit() : path === '/about' ? aboutPage() : path === '/visual-works' ? visualWorks() : path === '/preview' ? preview() : home()}${path === '/preview' ? '' : footer()}<dialog class="lightbox" aria-labelledby="lightbox-caption"><div class="lightbox-toolbar"><p id="lightbox-caption"></p><button type="button" class="close-lightbox" aria-label="Close image viewer">Close ×</button></div><div class="lightbox-image-wrap"><img alt=""></div><p class="lightbox-help">Scroll to inspect · Press Esc to close</p></dialog>`;
+document.querySelector('#app').innerHTML = `<div id="top"></div>${path === '/preview' || path === '/the-handmaiden' ? '' : header()}${path === '/the-handmaiden' ? handmaidenPage() : path === '/work/bybit' ? bybit() : path === '/about' ? aboutPage() : path === '/visual-works' ? visualWorks() : path === '/preview' ? preview() : home()}${path === '/preview' || path === '/the-handmaiden' ? '' : footer()}<dialog class="lightbox" aria-labelledby="lightbox-caption"><div class="lightbox-toolbar"><p id="lightbox-caption"></p><button type="button" class="close-lightbox" aria-label="Close image viewer">Close ×</button></div><div class="lightbox-image-wrap"><img alt=""></div><p class="lightbox-help">Scroll to inspect · Press Esc to close</p></dialog>`;
 if (!location.hash) window.scrollTo(0, 0);
 const dialog = document.querySelector('.lightbox');
 let opener;
@@ -82,4 +85,8 @@ if (path === '/preview') {
 
 initDirectory();
 
+if (path !== '/about' && path !== '/preview') initPageMotion();
+
 if (path === '/about') import('./about-motion.js').then(({initAboutMotion}) => initAboutMotion()).catch(() => {});
+
+if (path === '/the-handmaiden') import('./handmaiden-book.js').catch(() => { document.querySelector('#handmaiden-book').innerHTML = '<p>The photobook could not load. Please refresh the page.</p>'; });

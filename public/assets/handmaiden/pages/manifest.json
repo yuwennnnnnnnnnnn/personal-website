@@ -1,0 +1,466 @@
+[
+  {
+    "src": "/assets/handmaiden/pages/page-00.webp",
+    "source": "Frame 1410118829.png",
+    "side": "cover",
+    "sourceSize": [
+      3060,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Cover"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-01.webp",
+    "source": "Frame 1410118827.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 1"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-02.webp",
+    "source": "Frame 1410118827.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 2"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-03.webp",
+    "source": "Frame 1410118839.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 3"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-04.webp",
+    "source": "Frame 1410118839.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 4"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-05.webp",
+    "source": "Frame 1410118825.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 5"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-06.webp",
+    "source": "Frame 1410118825.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 6"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-07.webp",
+    "source": "Frame 1410118831.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 7"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-08.webp",
+    "source": "Frame 1410118831.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 8"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-09.webp",
+    "source": "Frame 1410118830.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 9"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-10.webp",
+    "source": "Frame 1410118830.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 10"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-11.webp",
+    "source": "Frame 1410118833.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 11"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-12.webp",
+    "source": "Frame 1410118833.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 12"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-13.webp",
+    "source": "Frame 1410118832.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 13"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-14.webp",
+    "source": "Frame 1410118832.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 14"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-15.webp",
+    "source": "Frame 1410118834.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 15"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-16.webp",
+    "source": "Frame 1410118834.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 16"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-17.webp",
+    "source": "Frame 1410118826.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 17"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-18.webp",
+    "source": "Frame 1410118826.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 18"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-19.webp",
+    "source": "Frame 1410118835.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 19"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-20.webp",
+    "source": "Frame 1410118835.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 20"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-21.webp",
+    "source": "Frame 1410118837.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 21"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-22.webp",
+    "source": "Frame 1410118837.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 22"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-23.webp",
+    "source": "Frame 1410118836.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 23"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-24.webp",
+    "source": "Frame 1410118836.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 24"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-25.webp",
+    "source": "Frame 1410118840.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 25"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-26.webp",
+    "source": "Frame 1410118840.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 26"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-27.webp",
+    "source": "Frame 1410118841.png",
+    "side": "left",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 27"
+  },
+  {
+    "src": "/assets/handmaiden/pages/page-28.webp",
+    "source": "Frame 1410118841.png",
+    "side": "right",
+    "sourceSize": [
+      6120,
+      4590
+    ],
+    "pageSize": [
+      3060,
+      4590
+    ],
+    "width": 1000,
+    "height": 1500,
+    "label": "Page 28"
+  }
+]

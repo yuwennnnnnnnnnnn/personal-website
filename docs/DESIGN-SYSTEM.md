@@ -33,3 +33,13 @@ Mobile case directory still collapses after selecting a chapter. Syntax validati
 No new reference image was attached to this request; implemented the explicit supplied numeric specification.
 
 Screenshots in `previews/system-*`. This iteration is local only.
+
+## Play 项目卡片
+
+Play 的项目卡片不使用装饰性箭头：封面图片、标题和 Explore project 文字旁均不添加箭头。整张卡片保留链接及原有交互。此规则适用于现有项目和后续新增项目。
+
+Play 卡片也不显示 Explore project 文案；使用封面、标题与简介组成整卡链接，后续新增项目同样遵循。
+
+## Approved Work and Play intro typography
+
+Only the Work and Play H1 and introductory copy use `--font-intro` (Helvetica Neue, local Inter fallback), Regular 400. Their short emphasis phrases use `--font-intro-emphasis` (Georgia italic, Times New Roman fallback), blue, with `--tracking-intro: -.035em`. This is the approved preview pairing, not a verified identification of the original reference font. H1 uses the existing page scale (48/32px, 1.2); lead copy uses 20/18px, 1.5. Play now separates “Things I build for the joy of building” as H1 from “Fun experiments, side projects, and creative explorations.” as its subtitle. Navigation, cards, About and case-study typography retain the existing Inter system.

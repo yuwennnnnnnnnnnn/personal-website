@@ -1,0 +1,77 @@
+@font-face{font-family:'Pinyon Script';src:url('/assets/handmaiden/pinyon-script.ttf') format('truetype');font-display:swap}
+/* Inherit the same h1–h4, body weights and line heights as the BYBIT case. */
+.handmaiden-page{--hm-navy:#051830;--hm-purple:#464e6b;--hm-pink:#cdabb2;--hm-accent:#fe6b80;background:var(--hm-navy);color:var(--hm-pink)}
+.handmaiden-page .shell{width:min(992px,calc(100% - 128px))}
+.hm-return{padding-block:var(--space-32)}
+.handmaiden-page .text-link{color:inherit}
+.hm-hero{margin:0 auto;background:var(--hm-navy)}
+.hm-hero img{display:block;width:100%;height:auto;object-fit:contain}
+.hm-section{padding-block:var(--space-64)}
+.hm-muted{background:var(--hm-purple);color:#fff}
+.handmaiden-page .hm-content{display:flex;flex-direction:column;gap:var(--space-24)}
+.hm-content p,.hm-content dd,.hm-content dt,.hm-content figcaption{color:inherit}
+.hm-content h4{margin:var(--space-24) 0 var(--space-8)}
+.hm-overview{display:flex;flex-direction:column;gap:var(--space-32)}
+.hm-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-24) var(--space-32);margin:0}
+.hm-meta dt{font-size:var(--text-meta);font-weight:var(--weight-body);line-height:var(--leading-body);margin-bottom:var(--space-8)}
+.hm-meta dd{margin:0;font-size:var(--text-meta);font-weight:var(--weight-body);line-height:var(--leading-body)}
+.hm-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-48)}
+.hm-two>div{display:flex;flex-direction:column;gap:var(--space-24);min-width:0}
+.hm-photo{margin:0;min-width:0}
+.hm-photo .image-button{display:block;width:100%;padding:0;background:transparent;border:0;border-radius:0}
+.hm-photo img{width:100%;height:auto;object-fit:contain}
+.hm-character-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);align-items:center;gap:var(--space-48)}
+.hm-character-names{font-size:var(--text-secondary);margin-top:var(--space-16)}
+.hm-content .hm-goal{margin:0}
+.hm-goal em{color:var(--hm-accent)}
+/* The book's font specimen is an artwork sample, not webpage typography. */
+.hm-content .hm-script{font-family:'Pinyon Script',cursive;font-size:var(--text-section)}
+.hm-font-sizes{display:flex;align-items:baseline;gap:var(--space-32);font-family:'Pinyon Script',cursive}
+.hm-font-sizes span:first-child{font-size:26px}.hm-font-sizes span:last-child{font-size:18px}
+.hm-swatches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.hm-swatches>div{background:var(--swatch);padding:var(--space-24) var(--space-16);font-size:var(--text-secondary)}
+.hm-swatches span{font-size:var(--text-meta)}
+.hm-rules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-48);margin-top:var(--space-24)}
+.hm-covers{display:grid;grid-template-columns:minmax(0,462fr) minmax(0,784fr);gap:var(--space-24);align-items:center}
+.hm-ending{padding-block:var(--space-48)}
+.hm-ending .hm-photo{width:min(992px,calc(100% - 128px));margin:auto}
+.hm-reader{width:100%}
+.hm-content .hm-reader-hint{text-align:center;font-size:var(--text-secondary);margin-bottom:var(--space-32)}
+.hm-reader-stage{width:100%;position:relative;min-width:0}
+.hm-flat-page{background:white;overflow:hidden}
+.hm-flat-page img{width:100%;height:100%;object-fit:contain;user-select:none}
+.hm-flipbook{filter:drop-shadow(0 6px 10px #00000018)}
+.hm-reader-pagination{text-align:center;margin-top:var(--space-24)}
+.hm-reader-pagination output{font-size:var(--text-secondary);font-variant-numeric:tabular-nums}
+#inner-pages{scroll-margin-top:var(--space-32)}
+@media(max-width:1100px){.handmaiden-page .shell,.hm-ending .hm-photo{width:min(992px,calc(100% - 96px))}}
+@media(max-width:1000px){.hm-two,.hm-character-layout,.hm-rules,.hm-covers{grid-template-columns:1fr;gap:var(--space-32)}.hm-poster{width:min(360px,100%);margin:auto}.hm-cover{max-width:660px;margin:auto}}
+@media(max-width:760px){.handmaiden-page .shell,.hm-ending .hm-photo{width:calc(100% - 48px)}.hm-section{padding-block:var(--space-48)}.hm-meta{grid-template-columns:1fr 1fr}.hm-return{padding-block:var(--space-24)}.hm-content .hm-reader-hint{margin-bottom:var(--space-24)}}
+@media(max-width:600px){.hm-meta{grid-template-columns:1fr;gap:var(--space-16)}.hm-swatches{grid-template-columns:1fr}.hm-swatches>div{padding:var(--space-16)}.hm-font-sizes{flex-wrap:wrap;gap:var(--space-16)}}
+/* Only this project uses an immersive cover and back cover. */
+.handmaiden-page .hm-screen{width:100%;height:100svh;margin:0;padding:0;position:relative;overflow:hidden;background:var(--hm-navy)}
+.handmaiden-page .hm-screen .hm-screen-motion{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+/* The GIF is only the lower-left layer of the original cover composition. */
+.hm-hero .hm-cover-animation{position:absolute;left:-11.28%;bottom:0;width:55.56%;height:auto}
+.hm-cover-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 48% -12%,#fe6b8052,transparent 48%),radial-gradient(ellipse at -12% 26%,#fe6b804d,transparent 38%),radial-gradient(ellipse at 112% 110%,#fe6b80b3,transparent 43%);pointer-events:none}
+.hm-hero .hm-cover-wordmark{position:absolute;left:50%;top:38.45%;transform:translateX(-50%);width:68.26%;height:auto}
+.hm-cover-line{position:absolute;left:50%;top:68%;transform:translateX(-50%);width:5%;border-top:1px solid #c76b7c}
+.hm-hero .hm-cover-label{position:absolute;left:0;right:0;top:72%;margin:0;text-align:center;color:#fe6b80;font:600 clamp(12px,1.15vw,21px)/1.4 Arial,sans-serif}
+.handmaiden-page .hm-cover-return{position:absolute;left:clamp(24px,3.56vw,64px);top:32px;z-index:1;color:#ffabb7;font-size:14px}
+@media(max-width:760px){
+.hm-hero .hm-cover-wordmark{width:140%;top:42%}
+.hm-hero .hm-cover-animation{width:115%;left:-35%}
+.hm-cover-line{top:59%;width:12%}
+.hm-hero .hm-cover-label{top:63%;font-size:13px}
+.handmaiden-page .hm-cover-return{top:24px}
+}
+
+.hm-reader-toolbar{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:32px}
+.hm-content .hm-reader-toolbar .hm-reader-hint{margin:0;text-align:center}
+.hm-reader-expand{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:32px;height:32px;border:0;border-radius:4px;padding:0;background:transparent;color:inherit;cursor:pointer}
+.hm-reader-expand:hover{background:#ffffff0d}
+.hm-reader-expand:focus-visible{outline:2px solid var(--hm-accent);outline-offset:2px}
+.hm-reader.hm-reader-fullscreen{position:fixed;inset:0;z-index:1000;width:100%;height:100dvh;padding:24px 32px;background:var(--hm-navy);display:flex;flex-direction:column;justify-content:center;overflow:auto}
+.hm-reader-fullscreen .hm-reader-toolbar{width:100%;margin:0 0 20px}
+.hm-reader-fullscreen .hm-reader-pagination{margin-top:16px}
+@media(max-width:760px){.hm-reader-toolbar{margin-bottom:24px}.hm-reader.hm-reader-fullscreen{padding:20px 16px}}

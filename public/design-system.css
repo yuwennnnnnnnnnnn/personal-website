@@ -100,3 +100,14 @@ small,figcaption{font-size:var(--text-secondary);line-height:var(--leading-body)
 .entry-organization,.university-name,.entry-date,.eyebrow,.project-meta dt,.project-meta dd,.skill-group h3,.exchange-programs h3,.exchange-row .entry-date,.art-note,.status{color:var(--muted)}
 /* Resume button has a fixed vertical rhythm and content-determined width. */
 .resume-download{padding-bottom:0}
+
+/* Approved Work / Play intro typography only; other page typography stays unchanged. */
+:root{
+ --font-intro:"Helvetica Neue",Inter,Arial,sans-serif;
+ --font-intro-emphasis:Georgia,"Times New Roman",serif;
+ --weight-intro:400;--tracking-intro:-.035em;--leading-intro-copy:1.5;
+}
+.home-intro h1,.visual-intro h1{font-family:var(--font-intro);font-size:var(--text-page);font-weight:var(--weight-intro);line-height:var(--leading-heading);letter-spacing:var(--tracking-intro)}
+.home-intro h1 .accent-text,.visual-intro h1 .play-title-emphasis{font-family:var(--font-intro-emphasis);font-style:italic;font-weight:var(--weight-intro);letter-spacing:var(--tracking-intro);line-height:inherit;color:var(--blue)}
+.intro-bottom p,.visual-intro .play-intro-subtitle{font-family:var(--font-intro);font-size:var(--text-lead);font-weight:var(--weight-body);line-height:var(--leading-intro-copy)}
+.visual-intro .play-intro-subtitle{color:var(--body-text);margin:var(--space-24) 0 0}

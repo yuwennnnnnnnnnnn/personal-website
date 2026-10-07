@@ -1,3 +1,4 @@
+import {initPageMotion} from '../page-motion.js';
 import {paintings,gallery} from './config.js';import{SoundEngine}from './audio.js';import{MiniPaintingWindow}from './mini-window.js';
 const $=id=>document.getElementById(id);let current=-1,activated=false,transition=0,idle;let mini=null,audioStatus='';const subscribers=new Set();function notify(){for(const fn of subscribers)fn()}
 const mixKey='stillroom-mix-v1';try{const stored=JSON.parse(localStorage.getItem(mixKey)||'{}');for(const scene of [gallery,...paintings])for(const t of scene.tracks){const v=stored[scene.id]?.[t.file];if(typeof v==='number'&&v>=0&&v<=1)t.volume=v}}catch{}
@@ -23,3 +24,5 @@ function setTrack(i,v){engine.setTrack(i,v);saveMix();sync()}
 mini=new MiniPaintingWindow({getState:()=>({painting:current>=0?paintings[current]:null,ratio:$('large-frame').getBoundingClientRect().width/$('large-frame').getBoundingClientRect().height,image:current>=0?new URL(`/stillroom/art/${paintings[current].id}-full.jpg`,location.href).href:'',playing:engine.playing,volume:engine.volume,status:audioStatus}),subscribe:fn=>{subscribers.add(fn);return()=>subscribers.delete(fn)},adjacent:delta=>paintings[(current+delta+paintings.length)%paintings.length],previous:()=>enter(current-1),next:()=>enter(current+1),toggle:()=>play(!engine.playing),pause:()=>play(false),setVolume,setTrack});
 $('mini-window').onclick=()=>{mini.open().catch(e=>{$('status').textContent=`Unable to open Mini player: ${e.message}`})};
 settings();sync();window.stillroom={engine,enter,back,mini,subscribers};
+
+initPageMotion();

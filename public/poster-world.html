@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Poster World · Yuwen Chen</title><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/design-system.css"><link rel="stylesheet" href="/poster-world.css"></head>
+<body><main>
+<section class="gallery active immersive" aria-label="Interactive spatial poster gallery" tabindex="0" aria-describedby="instructions">
+<div class="space" aria-label="Poster space"></div>
+<div class="gallery-top"><a class="text-link world-return" href="/visual-works">← Back to Play</a><button class="fullscreen-icon" id="leave" aria-label="Enter fullscreen" title="Enter fullscreen"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4H4v5M15 4h5v5M4 15v5h5M20 15v5h-5"/></svg></button></div>
+
+<div class="world-copy"><h1>Poster World</h1><p>Type, tradition, and experiments in between.<br>Step inside and find a different perspective.</p></div>
+<div class="gallery-bottom"><span id="instructions">Drag to explore. Scroll or pinch to move through space.</span><div class="zoom-controls"><button id="zoom-out" aria-label="Decrease auto speed" title="Decrease auto speed">−</button><output id="auto-speed" aria-label="Auto speed" aria-live="polite">1×</output><button id="zoom-in" aria-label="Increase auto speed" title="Increase auto speed">+</button><button id="roam" aria-label="Start automatic roaming now" aria-pressed="false" title="Start automatic roaming now"><span aria-hidden="true">▷</span> Auto</button><button id="reset" aria-label="Reset view" title="Reset view">↺</button></div><button class="quiet-button" id="browse">Browse all</button></div>
+<div class="index-panel" hidden><div class="index-heading"><div><h2>All posters</h2><p class="index-hint">Click a poster to take a closer look.</p></div><button class="quiet-button" id="close-index" aria-label="Close poster index">Close ×</button></div><div class="index-grid"></div></div>
+</section>
+
+</main>
+<dialog class="poster-viewer" aria-labelledby="viewer-title"><div class="viewer-toolbar"><div><span id="viewer-title">Poster</span></div><button id="close-viewer" aria-label="Close poster">Close ×</button></div><div class="viewer-art"><img alt=""></div><div class="viewer-bottom"><button id="previous" aria-label="Previous poster">←</button><button id="next" aria-label="Next poster">→</button></div></dialog>
+<script type="module" src="/poster-world.js"></script></body></html>

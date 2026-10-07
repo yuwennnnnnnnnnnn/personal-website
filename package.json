@@ -6,9 +6,21 @@
   "scripts": {
     "dev": "node server.mjs",
     "start": "node server.mjs",
-    "check": "node --check server.mjs && node --check public/app.js && node --check public/case-study.js && node --check public/about.js && node --check public/about-motion.js && node --check public/stillroom/main.js && node --check public/stillroom/audio.js && node --check public/stillroom/config.js && node --check public/stillroom/mini-window.js && node --check public/stillroom/recording-review.js"
+    "check": "node --check server.mjs && node --check public/app.js && node --check public/handmaiden.js && node --check public/handmaiden-book.js && node --check public/case-study.js && node --check public/about.js && node --check public/about-motion.js && node --check public/page-motion.js && node --check public/stillroom/main.js && node --check public/stillroom/audio.js && node --check public/stillroom/config.js && node --check public/stillroom/mini-window.js && node --check public/stillroom/recording-review.js && node --check public/poster-world.js",
+    "build:book": "esbuild src/handmaiden-book.jsx --bundle --minify --format=esm --define:process.env.NODE_ENV=\\\"production\\\" --outfile=public/handmaiden-book.js",
+    "build:posters": "esbuild src/poster-world/world.js --bundle --minify --format=esm --outfile=public/poster-world.js",
+    "test:posters": "node --test src/poster-world/world.test.mjs"
   },
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-pageflip": "^2.0.3",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
   }
 }

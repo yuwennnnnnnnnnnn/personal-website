@@ -7,6 +7,10 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/poster-world",
+      "destination": "/poster-world.html"
+    },
+    {
       "source": "/listening-gallery",
       "destination": "/stillroom/experience.html"
     },
@@ -24,6 +28,10 @@
     },
     {
       "source": "/preview",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/the-handmaiden",
       "destination": "/index.html"
     }
   ],
