@@ -122,3 +122,40 @@ Later batch: La Grande Jatte distant people/boats and pool independent water cir
 
 ## Production delivery encoding
 The processed field WAV masters remain local archives. Production delivers LAME VBR quality-2 MP3 files encoded from those exact masters, preserving channels, existing gain and seam edits. The engine maps field/*.wav mix IDs to field/*.mp3 URLs; existing saved mix settings remain valid. This reduces network transfer without changing sources or track controls. Originals/public previews remain distinguished above.
+
+## Audio closeout check — 2026-10-10
+
+This pass did **not** perform perceptual listening. The available tools can decode and measure audio but cannot hear speech intelligibility, spatial texture, naturalness or perceptual loop quality. No new candidate is marked approved or connected. All earlier user-approved recordings and saved track IDs remain unchanged. Removing development placeholders from Sound mix is not completion of the missing recording layers.
+
+### Recovered and new source files
+
+| Candidate / intended role | Author, source and license | Hosted file | Adopted excerpt / processing |
+|---|---|---|---|
+| Wooden boat rowing and water / possible sparse boat events | bulbastre, [Freesound #127006](https://freesound.org/people/bulbastre/sounds/127006/), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | round4/wooden-boat.mp3 | Public HQ preview download recovered. Entire source retained unchanged; no creak-only excerpt adopted. Water and rowing are mixed. |
+| Quiet distant murmuring / Gallery voices | blaastaal, [Freesound #766658](https://freesound.org/people/blaastaal/sounds/766658/), [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | round4/quiet-voices.mp3 | Public HQ preview download recovered. Entire source retained unchanged; speech intelligibility and recording method not verified. |
+| Pool filtration / circulation candidate | solarpsychedelic, [Freesound #871395](https://freesound.org/people/solarpsychedelic/sounds/871395/), [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | round4/pool-filtration.mp3 | Actual pool filtration building motor and ventilation, recorded by iPhone and boosted by author. Entire public HQ preview retained unchanged. Not isolated returning water; no excerpt adopted. |
+
+These are locally hosted previews, not lossless originals. Credits are retained in the review page; the boat source requires attribution if a derivative is later connected.
+
+### Ten gaps — none certified complete by this pass
+
+| Gap | Evidence and remaining gate |
+|---|---|
+| Gallery clean room tone | #660480 retained for review. Empty-bar origin and possible distant traffic are documented; absence of footsteps/voices has not been heard and verified. Existing mixed Gallery ambience remains honestly labeled. |
+| Gallery independent voices | #766658 now downloaded completely. No listening or intelligibility approval; not connected. |
+| Nighthawks clean indoor tone | #715632 retained. Electrical tonal harshness has not been heard and assessed; mixed Café ambience remains. |
+| Nighthawks distant street | #776263 retained. Author describes distant traffic and AC; close passes/sirens have not been ruled out by listening. |
+| Sunday distant visitors or boat | [#559821 by jackmichaelking](https://freesound.org/people/jackmichaelking/sounds/559821/) (CC0) was assessed from the author's description only: birds, embankment waves and possible bark/sneeze accompany the boat. Not selected as a clean independent layer; an acceptable excerpt/source is still missing. |
+| Great Wave independent wind | #659004 explicitly includes surf/waves in source tags. Not accepted as independent sea wind; duplication with the current mixed sea recording remains unresolved. |
+| Great Wave wooden boat events | #127006 recovered. #846380 remains an alternative with documented voices/motorboat. No isolated quiet creak excerpts identified through listening; not connected. |
+| Golconda rooftop air | #26786 includes traffic/possible bells; #72563 is open-field rather than rooftop wind. Neither has passed perceptual review, so existing honestly named foliage wind remains. |
+| Splash summer air | #553733 is open-field wind, not confirmed poolside; foliage/bird/gust content has not been audited by listening. |
+| Splash independent circulation | #871395 recovered as a pump/ventilation candidate. The existing pool base also contains a pump. Layering them would not satisfy independent control; a clean base or verified pump-free excerpt remains required. |
+
+### Objective checks and implemented maintenance
+
+- Full-file decode, sample peak/clipping, RMS, one-second level summaries and raw last-to-first sample step are in [technical-audit.json](/stillroom/audio/round4/technical-audit.json). These are measurements, not listening approvals or perceptual loudness validation.
+- Production MP3 loop decoding now repairs a last-to-first sample difference greater than -50 dBFS with a 3 ms cosine shoulder on each side. Both endpoint samples meet at their shared midpoint. Interior samples, number of channels, playback rate, source identity and mix gain remain unchanged. The operation cannot increase the sample peak. This addresses numerical discontinuities, not unverified perceptual transitions.
+- Event WAVs are excluded from this repair. The three approved Footsteps excerpts and two approved Tableware variations retain their existing fades, sparse scheduling, shared sliders and source files.
+- Node regression checks cover loop endpoint continuity, unchanged interior, peak ceiling, event cancellation on pause/zero/scene switch and stale asynchronous scene loads. No new audio content approval is implied.
+- Sound mix shows available tracks and necessary mixed-recording explanations. Source-selection and missing-layer status remain on the review page and in this record.

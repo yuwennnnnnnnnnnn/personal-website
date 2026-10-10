@@ -56,3 +56,7 @@ paintings.find(p=>p.id==='bridge').pendingTracks=[];
 paintings.find(p=>p.id==='golconda').pendingTracks=['Open-air wind replacement · round-four review'];
 paintings.find(p=>p.id==='sunday').pendingTracks=['Distant visitors or boats · later recording batch'];
 paintings.find(p=>p.id==='splash').pendingTracks=['Summer air · round-four review','Independent circulation · later recording batch'];
+
+// Describe recorded content honestly; missing-layer work stays on the review page.
+paintings.find(p=>p.id==='wave').tracks[0].note='Waves and wind are mixed in this recording and cannot be adjusted separately.';
+paintings.find(p=>p.id==='splash').tracks[0].note='Pool water, pump and birds are mixed in this recording and cannot be adjusted separately.';

@@ -198,5 +198,80 @@
     "baseVolume": 0.4,
     "candidateVolume": 0.18,
     "checkedDate": "2026-10-04"
+  },
+  {
+    "id": 127006,
+    "author": "bulbastre",
+    "page": "https://freesound.org/people/bulbastre/sounds/127006/",
+    "title": "Wooden boat rowing and water",
+    "role": "Wooden boat detail",
+    "scene": "wave",
+    "mode": "detail",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "licenseName": "CC BY 4.0",
+    "local": "/stillroom/audio/round4/wooden-boat.mp3",
+    "duration": 176.767417,
+    "channels": 1,
+    "reviewRange": [
+      0,
+      176.767417
+    ],
+    "reviewRangeStatus": "Full source; no excerpt has passed listening review",
+    "warnings": "Recorded rowing, water and wooden boat sounds are mixed. Creak-only events have not been identified by listening; no fragment is approved.",
+    "status": "downloaded-awaiting-listening",
+    "baseVolume": 0.4,
+    "candidateVolume": 0.12,
+    "checkedDate": "2026-10-10",
+    "preview": "https://cdn.freesound.org/previews/127/127006_149596-hq.mp3"
+  },
+  {
+    "id": 766658,
+    "author": "blaastaal",
+    "page": "https://freesound.org/people/blaastaal/sounds/766658/",
+    "title": "Quiet distant murmuring",
+    "role": "Distant voices",
+    "scene": "gallery",
+    "mode": "detail",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licenseName": "CC0",
+    "local": "/stillroom/audio/round4/quiet-voices.mp3",
+    "duration": 154.13,
+    "channels": 2,
+    "reviewRange": [
+      0,
+      154.13
+    ],
+    "reviewRangeStatus": "Full source; no excerpt has passed listening review",
+    "warnings": "Author describes quiet small-group murmuring. Natural recording method and speech intelligibility remain unverified by listening.",
+    "status": "downloaded-awaiting-listening",
+    "baseVolume": 0.4,
+    "candidateVolume": 0.12,
+    "checkedDate": "2026-10-10",
+    "preview": "https://cdn.freesound.org/previews/766/766658_3324065-hq.mp3"
+  },
+  {
+    "id": 871395,
+    "author": "solarpsychedelic",
+    "page": "https://freesound.org/people/solarpsychedelic/sounds/871395/",
+    "title": "Swimming pool filtration system",
+    "role": "Independent pool filtration candidate",
+    "scene": "splash",
+    "mode": "detail",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licenseName": "CC0",
+    "local": "/stillroom/audio/round4/pool-filtration.mp3",
+    "duration": 73.663855,
+    "channels": 2,
+    "reviewRange": [
+      0,
+      73.663855
+    ],
+    "reviewRangeStatus": "Full source; no excerpt has passed listening review",
+    "warnings": "Actual swimming-pool filtration building, with motor hum and ventilation. Not isolated water return. Do not layer over a pump-containing base and call pump control independent.",
+    "status": "downloaded-awaiting-listening",
+    "baseVolume": 0.4,
+    "candidateVolume": 0.12,
+    "checkedDate": "2026-10-10",
+    "preview": "https://cdn.freesound.org/previews/871/871395_8645255-hq.mp3"
   }
 ]

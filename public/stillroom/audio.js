@@ -1,7 +1,19 @@
+// Repair measurable decoded MP3 wrap discontinuities without altering the source mix.
+// Only a 3 ms shoulder on each side is changed; event transients are excluded.
+export function smoothLoopJoin(buffer) {
+ const n=Math.min(Math.round(buffer.sampleRate*.003),Math.floor(buffer.length/4));
+ if(n<2)return buffer;
+ const channels=Array.from({length:buffer.numberOfChannels},(_,i)=>buffer.getChannelData(i));
+ if(channels.every(x=>Math.abs(x[0]-x[x.length-1])<=Math.pow(10,-50/20)))return buffer;
+ for(const x of channels){const midpoint=(x[0]+x[x.length-1])/2;
+  for(let i=0;i<n;i++){const amount=.5-.5*Math.cos(Math.PI*i/(n-1));x[i]=midpoint*(1-amount)+x[i]*amount;const j=x.length-1-i;x[j]=midpoint*(1-amount)+x[j]*amount;}}
+ return buffer;
+}
+
 export class SoundEngine {
  constructor(onStatus){this.onStatus=onStatus;this.cache=new Map;this.groups=[];this.serial=0;this.playing=false;this.volume=.6;this.strong=false;this.toggleSerial=0;}
  async init(){if(!this.ctx){this.ctx=new AudioContext();this.master=this.ctx.createGain();this.master.gain.value=0;this.master.connect(this.ctx.destination)}await this.ctx.resume();}
- async buffer(file){if(!this.cache.has(file))this.cache.set(file,fetch(`/stillroom/audio/${file.startsWith('field/')?file.replace(/\.wav$/,'.mp3'):(file.includes('.')?file:file+'.wav')}`).then(r=>{if(!r.ok)throw Error('Audio unavailable');return r.arrayBuffer()}).then(b=>this.ctx.decodeAudioData(b)).catch(e=>{this.cache.delete(file);throw e}));return this.cache.get(file);}
+ async buffer(file){if(!this.cache.has(file))this.cache.set(file,fetch(`/stillroom/audio/${file.startsWith('field/')?file.replace(/\.wav$/,'.mp3'):(file.includes('.')?file:file+'.wav')}`).then(r=>{if(!r.ok)throw Error('Audio unavailable');return r.arrayBuffer()}).then(b=>this.ctx.decodeAudioData(b)).then(b=>file.startsWith('field/')?smoothLoopJoin(b):b).catch(e=>{this.cache.delete(file);throw e}));return this.cache.get(file);}
  cancelEvents(g,index){for(const e of g.events||[]){if(index!==undefined&&e.index!==index)continue;clearTimeout(e.timer);g.timers.delete(e.timer);e.timer=null;}for(const s of g.eventSources||[]){if(index!==undefined&&s.trackIndex!==index)continue;const now=this.ctx.currentTime;s.eventGain.gain.cancelAndHoldAtTime(now);s.eventGain.gain.linearRampToValueAtTime(0,now+.025);try{s.stop(now+.03)}catch{}}}
  destroy(g){clearTimeout(g.stopTimer);this.cancelEvents(g);g.timers.forEach(clearTimeout);g.sources.forEach(s=>{try{s.stop()}catch{}s.disconnect();s.eventGain?.disconnect()});g.bus.disconnect();this.groups=this.groups.filter(x=>x!==g);}
  eventAllowed(g,e){return this.playing&&this.volume>0&&this.groups.at(-1)===g&&this.sceneConfig.id===g.id&&this.sceneConfig.tracks[e.index]?.volume>0;}
