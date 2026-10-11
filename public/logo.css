@@ -1,0 +1,13 @@
+.personal-logo{display:inline-block;position:relative;flex-shrink:0;background:none;overflow:visible;vertical-align:middle}
+.personal-logo-shape{position:absolute;inset:14.65%;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4%;transform:rotate(45deg);transition:transform 600ms cubic-bezier(.22,1,.36,1)}
+.logo-petal{display:block;transition:border-radius 580ms cubic-bezier(.22,1,.36,1);transition-delay:var(--petal-delay)}
+.logo-petal:nth-child(1){background:#2849DF;border-radius:75% 75% 0 75%;--petal-delay:0ms}
+.logo-petal:nth-child(2){background:#536CE3;border-radius:75% 75% 75% 0;--petal-delay:20ms}
+.logo-petal:nth-child(3){background:#7A8CEA;border-radius:75% 0 75% 75%;--petal-delay:40ms}
+.logo-petal:nth-child(4){background:#354FD0;border-radius:0 75% 75% 75%;--petal-delay:60ms}
+.personal-logo:focus-visible{outline:2px solid var(--blue);outline-offset:4px;border-radius:3px}
+.personal-logo:is(:hover,:focus-visible) .personal-logo-shape,
+a:is(:hover,:focus-visible) > .personal-logo .personal-logo-shape{transform:rotate(0deg)}
+.personal-logo:is(:hover,:focus-visible) .logo-petal,
+a:is(:hover,:focus-visible) > .personal-logo .logo-petal{border-radius:0}
+@media(prefers-reduced-motion:reduce){.personal-logo-shape,.logo-petal{transition:none}}

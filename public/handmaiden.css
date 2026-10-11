@@ -75,3 +75,9 @@
 .hm-reader-fullscreen .hm-reader-toolbar{width:100%;margin:0 0 20px}
 .hm-reader-fullscreen .hm-reader-pagination{margin-top:16px}
 @media(max-width:760px){.hm-reader-toolbar{margin-bottom:24px}.hm-reader.hm-reader-fullscreen{padding:20px 16px}}
+
+.handmaiden-page .hm-cover-return{font-weight:500;line-height:1.5;letter-spacing:normal;border-bottom:1px solid currentColor;padding-bottom:8px}
+
+/* Keep the Play return link visible throughout the photobook. */
+.handmaiden-page>.hm-cover-return{position:fixed;top:32px;left:clamp(24px,3.56vw,64px);z-index:20;min-height:0;padding:0 0 8px;font:500 14px/1.5 Inter,Arial,sans-serif;color:#ffabb7;border-bottom:1px solid currentColor}
+@media(max-width:760px){.handmaiden-page>.hm-cover-return{top:24px}}

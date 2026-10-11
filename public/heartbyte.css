@@ -1,0 +1,122 @@
+.hb-opening{padding-top:var(--space-24)}
+.hb-back{display:inline-flex;margin-bottom:var(--space-24)}
+.hb-hero{position:relative;isolation:isolate;background:#829396;border-radius:4px;overflow:hidden}
+.hb-human{display:block;width:100%;height:auto}
+.hb-robot{position:absolute;width:47%;height:auto;right:-1%;top:0;transform:rotate(15deg);clip-path:inset(0 1% 0 0)}
+.hb-hero-copy{position:absolute;inset:auto 24px 14%;text-align:center;color:white}
+.hb-hero-copy h1{margin:0 0 var(--space-8)}
+.hb-hero-copy p{margin:0;color:white;font-size:var(--text-lead)}
+.hb-page .case-layout{padding-top:var(--space-64)}
+.hb-section{padding:var(--space-64) 0}
+.hb-section h2{margin-bottom:var(--space-32)}
+.hb-section h3{font-size:var(--text-title);font-weight:var(--weight-medium);line-height:var(--leading-title);margin:0 0 var(--space-24)}
+.hb-section p{margin:0 0 var(--space-16)}
+.hb-content strong{color:#974589;font-weight:var(--weight-medium)}
+
+
+
+.hb-figure{margin:0;min-width:0}
+.hb-figure img{display:block;width:100%;height:auto}
+.hb-figure .image-button{display:block;width:100%;border:0;padding:0;background:transparent;border-radius:0;cursor:zoom-in}
+.hb-figure figcaption{margin-top:var(--space-12)}
+.hb-films{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-48)}
+.hb-film{display:grid;grid-template-columns:120px minmax(0,1fr);gap:var(--space-24);align-items:start}
+.hb-film p{margin:0}
+.hb-question{margin:var(--space-32) 0 0;padding:var(--space-32);border-radius:16px;background:linear-gradient(100deg,#dfe2db,#c2ced0);font-size:var(--text-section);font-weight:var(--weight-heading);line-height:var(--leading-title)}
+.hb-question-pink{background:linear-gradient(110deg,#fae8f6,#f1f2f8)}
+.hb-research{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:var(--space-32);align-items:start}
+.hb-books{display:flex;gap:var(--space-16);align-items:start}
+.hb-books .hb-figure{flex:1}
+.hb-prose{max-width:800px}
+.hb-research+.hb-prose{margin-top:var(--space-32)}
+.hb-goal{padding:var(--space-48) var(--space-32);background:#f5f7fa;text-align:center}
+.hb-goal h3{font-size:var(--text-section);font-weight:var(--weight-heading);line-height:1.4;margin-bottom:var(--space-32)}
+.hb-goal h3 span,.hb-ending h2 span{color:#974589}
+.hb-goal h3 em,.hb-ending h2 em{font-style:normal;color:#111a41}
+.hb-goal .hb-figure{max-width:620px;margin:auto}
+.hb-diagram{padding:var(--space-24);background:#f5f7fa}
+.hb-system{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-48);background:#fff;padding:var(--space-32);align-items:start}
+.hb-icons{margin-top:var(--space-32)}
+.hb-icons img{display:block;max-width:100%;height:auto}
+.hb-phones{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-48) var(--space-32);padding:var(--space-32);background:linear-gradient(150deg,#fcf0f9,#f5f7fa 35%,#eef0f7)}
+.hb-phone{min-width:0;max-width:280px;width:100%;justify-self:center}
+.hb-phone h3{margin-bottom:var(--space-16)}
+.hb-phone .image-button{box-shadow:0 10px 28px #111a410d}
+.hb-phone:nth-last-child(1){grid-column:3}
+.hb-touchpoints{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-24);margin-top:var(--space-32)}
+.hb-touchpoints h4{font-size:var(--text-body);margin:0 0 var(--space-8)}
+.hb-touchpoints p{font-size:var(--text-secondary);margin:0;color:var(--muted)}
+.hb-ending{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:var(--space-48);align-items:center}
+.hb-ending h2{margin-bottom:var(--space-24)}
+.hb-ending .hb-benefit{margin-top:var(--space-32)}
+.hb-benefit h3{margin-bottom:var(--space-8)}
+
+.heartbyte-cover{background:#899a9d}
+@media(max-width:1200px){.hb-film{display:block}.hb-film>.hb-figure{width:140px;margin-bottom:var(--space-24)}.hb-system{padding:var(--space-24);gap:var(--space-24)}}
+@media(max-width:760px){
+ .hb-opening{padding-top:var(--space-16)}
+ .hb-hero-copy{position:relative;inset:auto;padding:var(--space-24);background:#657b80}
+ .hb-page .case-layout{padding-top:var(--space-32)}
+ .hb-section{padding:var(--space-48) 0}
+ 
+ .hb-films,.hb-research,.hb-system,.hb-ending{grid-template-columns:1fr;gap:var(--space-32)}
+ .hb-film{display:grid;grid-template-columns:100px minmax(0,1fr);gap:var(--space-16)}
+ .hb-film>.hb-figure{width:auto;margin:0}
+ .hb-question{padding:var(--space-24)}
+ .hb-books{max-width:440px;gap:var(--space-12)}
+ .hb-goal{padding:var(--space-32) var(--space-16)}
+ .hb-diagram{padding:var(--space-12)}
+ .hb-system{padding:var(--space-24)}
+ .hb-phones{grid-template-columns:1fr;padding:var(--space-24);gap:var(--space-48)}
+ .hb-phone:nth-last-child(1){grid-column:auto}
+ .hb-touchpoints{grid-template-columns:1fr}
+ .hb-ending-photo{max-width:360px;width:100%;justify-self:center}
+}
+@media(max-width:480px){.hb-film{display:block}.hb-film>.hb-figure{width:140px;margin-bottom:var(--space-24)}.hb-system{padding:var(--space-16)}}
+
+.hb-benefit{display:grid;grid-template-columns:56px minmax(0,1fr);column-gap:var(--space-16)}
+.hb-benefit>img{grid-row:1 / 3;align-self:start}
+.hb-benefit>h3,.hb-benefit>p{grid-column:2}
+
+.hb-timeline{position:absolute;right:var(--space-24);bottom:var(--space-24);margin:0;text-align:right;color:#ffffffa6;text-shadow:none;font-size:var(--text-meta);letter-spacing:.06em;line-height:var(--leading-body)}
+.hb-timeline dt{margin-bottom:var(--space-4);font-weight:var(--weight-medium)}
+.hb-timeline dd{margin:0;color:inherit;font-size:inherit;letter-spacing:inherit}
+.hb-content>.hb-section:first-child{border-top:0;padding-top:0}
+@media(max-width:760px){.hb-hero-copy{padding-bottom:96px}.hb-timeline{right:var(--space-16);bottom:var(--space-16)}}
+
+/* Original source photo, framed without the flattened decorative overlays. */
+.hb-clean-connection{overflow:hidden;aspect-ratio:1.16}
+.hb-clean-connection img{width:100%;height:100%;object-fit:cover;object-position:center}
+/* White becomes the page colour; diagram labels and illustration colours remain. */
+#user-flow .hb-diagram{background:var(--paper);padding:0;isolation:isolate}
+#user-flow .hb-diagram .hb-figure{mix-blend-mode:multiply}
+
+/* Approved full-width cover; reading layout follows the published page. */
+.hb-opening{width:100%;max-width:none;padding:0}
+.hb-opening .hb-hero{border-radius:0}
+.hb-opening .hb-back{position:absolute;top:32px;left:clamp(24px,3.56vw,64px);z-index:2;padding:0 0 8px;font:500 14px/1.5 Inter,Arial,sans-serif;color:#fff;border-bottom:1px solid currentColor}
+@media(max-width:760px){.hb-opening .hb-back{top:24px}}
+/* Original HeartByte palette and the published colour blocks' positions. */
+.hb-content strong{color:#dd88cf}
+.hb-content #literature strong{color:#111a41}
+.hb-goal h3 span,.hb-ending h2 span{color:#dd88cf}
+.hb-goal h3 em,.hb-ending h2 em{color:#111a41}
+.hb-question,.hb-goal,.hb-diagram,.hb-system,.hb-phones{border-radius:16px}
+
+/* Match the three research covers by height without cropping their artwork. */
+.hb-books{align-items:center}
+.hb-books .hb-figure{flex:1 1 0;min-width:0}
+.hb-books .image-button{height:clamp(160px,23vw,290px);display:flex;align-items:center;justify-content:center}
+.hb-books img{width:auto;height:100%;max-width:100%;object-fit:contain}
+@media(max-width:760px){.hb-books .image-button{height:clamp(150px,36vw,225px)}}
+/* Size from the available row width so the visible covers, not just their boxes, align. */
+.hb-books{container-type:inline-size}
+.hb-books .hb-figure{flex:0 1 auto}
+.hb-books .image-button{height:min(240px,calc((100cqw - 32px)/2.1))}
+.hb-books img{width:auto;max-width:none;height:100%;object-fit:contain}
+@media(max-width:760px){.hb-books .image-button{height:min(225px,calc((100cqw - 24px)/2.1))}}
+/* Fill the Play card without stretching the cover artwork. */
+.visual-cover.heartbyte-cover img{object-fit:cover;object-position:center}
+
+/* Keep the return control in reach while reading. */
+.hb-opening .hb-back{position:fixed;z-index:20;mix-blend-mode:difference}

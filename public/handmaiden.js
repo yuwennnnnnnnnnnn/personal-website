@@ -18,12 +18,12 @@ const images = {
 const photo = (key, node, caption = '') => {const [file,w,h,alt]=images[key];return `<figure class="hm-photo hm-${key}" data-figma-node="${node}"><button class="image-button" data-image="${base+file}" data-caption="${alt}" aria-label="Enlarge: ${alt}"><img src="${base+file}" width="${w}" height="${h}" alt="${alt}" loading="lazy"></button>${caption?`<figcaption>${caption}</figcaption>`:''}</figure>`;};
 const section = (content, muted=false) => `<section class="hm-section ${muted?'hm-muted':''}"><div class="shell hm-content">${content}</div></section>`;
 export function handmaidenPage(){return `<main id="main" class="handmaiden-page">
+<a class="text-link hm-cover-return" href="/visual-works" aria-label="Back to Play">← Back to Play</a>
 <section class="hm-screen hm-hero" aria-label="The Handmaiden photobook cover">
 <img class="hm-cover-animation" src="${base}cover-original.gif" width="1000" height="474" alt="" fetchpriority="high">
 <div class="hm-cover-glow" aria-hidden="true"></div>
 <img class="hm-cover-wordmark" src="${base}imgSectionProjectModule13Ae96A5100658958Df73Ada6B92Png.png" width="1012" height="168" alt="A film by Park Chan-wook — The Handmaiden" fetchpriority="high">
 <span class="hm-cover-line" aria-hidden="true"></span><p class="hm-cover-label">PHOTOBOOK</p>
-<a class="text-link hm-cover-return" href="/visual-works">← Back to Play</a>
 </section>
 ${section(`<div class="hm-overview"><dl class="hm-meta"><div><dt>PROJECT TYPE</dt><dd>Book Design</dd></div><div><dt>TEAM</dt><dd>Individual Project</dd></div><div><dt>TIMELINE</dt><dd>July 10–14, 2024</dd></div><div><dt>POSITION / ROLE</dt><dd>Graphic Designer</dd></div><div><dt>TOOLS</dt><dd>Figma<br>Adobe Sets</dd></div></dl></div>`)}
 ${section(`<h2 id="inner-pages">The Handmaiden photobook</h2><div id="handmaiden-book"><p>Loading photobook…</p></div>`)}

@@ -51,10 +51,10 @@ body.viewing #player{position:fixed;bottom:14px;left:50%;transform:translateX(-5
 body.viewing #viewer::before,body.viewing #viewer::after{content:none}
 
 /* Let the gallery continue behind the floating player: no footer shelf. */
-body:not(.viewing) main{height:calc(100dvh - 100px);padding-bottom:0}
+body:not(.viewing) main{height:100dvh;padding-bottom:0}
 .wall-note{margin-bottom:25px}
 #player::before,#player::after{content:none}
-@media(max-width:650px){body:not(.viewing) main{height:calc(100dvh - 85px);padding-bottom:0}}
+@media(max-width:650px){body:not(.viewing) main{height:100dvh;padding-bottom:0}}
 
 /* Restore the original gallery controls, floating without a backing card. */
 body:not(.viewing) #player{bottom:14px;width:min(670px,90%);max-width:calc(100% - 28px);padding:18px 24px;gap:22px;justify-content:initial;flex-wrap:nowrap;color:#46483f;background:none;border:0;box-shadow:none;backdrop-filter:none;border-radius:0}
@@ -74,3 +74,15 @@ body:not(.viewing) #sound-settings span{display:inline}
 /* A soft translucent wash behind the original gallery controls. */
 body:not(.viewing) #player{isolation:isolate}
 body:not(.viewing) #player::before{content:"";position:absolute;inset:2px -8px;z-index:-1;pointer-events:none;background:rgba(242,239,230,.95);border-radius:34px;filter:none;box-shadow:none}
+
+/* Gallery heading hierarchy; return link follows the Play project controls. */
+@font-face{font-family:Inter;src:url('/assets/fonts/inter-500.ttf') format('truetype');font-style:normal;font-weight:500;font-display:swap}
+.gallery-return.gallery-project-return{position:absolute;top:32px;left:clamp(24px,3.56vw,64px);z-index:2;display:inline-flex;align-items:center;gap:32px;padding:0 0 8px;font-family:Inter,Arial,sans-serif;font-size:14px;font-weight:500;font-synthesis:none;letter-spacing:normal;line-height:1.5;text-decoration:none;color:#242424;border-bottom:1px solid #242424;background:none;border-radius:0}
+.gallery-return.gallery-project-return:hover{color:#242424;border-color:#254bdf}
+body>main>.intro{padding:72px 20px 25px}
+.intro h1{font:34px/1.2 Georgia,serif;letter-spacing:-.7px;margin:14px 0 8px}
+.intro .intro-subtitle{font:18px/1.4 Georgia,serif;color:#78796c;margin:0 0 9px;letter-spacing:0}
+.intro p:not(.intro-subtitle){font-size:11px;line-height:1.5;margin:0}
+@media(max-width:650px){.gallery-return.gallery-project-return{top:24px}.intro h1{font-size:31px}.intro .intro-subtitle{font-size:16px;max-width:350px;margin-inline:auto}body>main>.intro{padding:72px 20px 25px}}
+
+@media(min-width:651px) and (max-width:760px){.gallery-return.gallery-project-return{top:24px}}

@@ -1,0 +1,22 @@
+/* Shared motion tokens. JavaScript reads these same values. */
+:root{--motion-enter:520;--motion-scroll:450;--motion-fade:180;--motion-disclosure:380;--motion-feedback:420;--motion-stagger:70;--motion-enter-distance:18;--motion-scroll-distance:14;--motion-stiffness:280;--motion-damping:26;--motion-mass:.8;--motion-ease:cubic-bezier(.2,.75,.3,1);--motion-spring:cubic-bezier(.2,.85,.3,1.04)}
+@media(max-width:760px){:root{--motion-enter-distance:10;--motion-scroll-distance:8}}
+:where(.project-link,.image-button,.index-grid button,button,.text-link,.resume-button,.toc-home,.site-header nav a){transition:translate calc(var(--motion-feedback)*1ms) var(--motion-spring),scale calc(var(--motion-feedback)*1ms) var(--motion-spring)}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ .project-link{display:block}.project-link:hover,.image-button:hover,.index-grid button:hover{translate:0 -3px}
+ .project-link:hover .visual-cover img{transform:scale(1.02)}
+ .project-link:hover .card-phone{transform:rotate(7deg)}
+ .image-button:hover .image-expand{transform:none}
+}
+:where(button:not(.painting):not(#handmaiden-book button),.text-link,.resume-button,.toc-home):active{scale:.98}
+.visual-cover img{transition:transform calc(var(--motion-feedback)*1ms) var(--motion-ease)}
+.gallery-return{color:inherit;text-decoration:none;font:inherit;white-space:nowrap}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ :where(.project-link,.image-button,.index-grid button,button,.text-link,.resume-button,.toc-home){translate:none!important;scale:none!important}
+ .project-link:hover .visual-cover img{transform:none}
+ .project-link:hover .card-phone{transform:rotate(7deg)}
+}
+
+@media(hover:hover) and (prefers-reduced-motion:no-preference){:where(button:not(.painting):not(.image-button):not(.index-grid button):not(#handmaiden-book button),.resume-button,.toc-home):hover{scale:1.01}}

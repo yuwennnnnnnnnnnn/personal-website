@@ -89,3 +89,5 @@ body,.gallery,.gallery.immersive,.gallery:fullscreen{background:#fff}
 .index-grid{column-gap:12px}
 @media(max-width:760px){.index-grid{column-gap:8px}}
 .index-grid,.index-heading{width:100%;max-width:1120px;margin-inline:auto}
+
+.gallery-top .world-return{font-size:14px;font-weight:500;border-bottom:1px solid var(--ink);display:inline-flex;align-items:center;color:var(--ink)}
