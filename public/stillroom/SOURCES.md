@@ -86,7 +86,7 @@ Footsteps: three 5–6-second excerpts from Anya_Media #529713, CC0, with quiet 
 
 Pause, master zero, event-track zero and scene changes cancel timers and fade active events out in 25ms, stopping their sources after 30ms. Resuming creates a fresh sparse wait rather than replaying queued events. Events never trigger in a paused/outgoing scene. Approved mix values remain persisted per scene and layer key.
 
-The existing base files are still mixed recordings, explicitly named Gallery ambience and Café ambience. Turning off Footsteps/Tableware removes only the added event layer; it cannot remove steps or dishes baked into the old base. A short note beside the base slider makes this explicit. The strict clean-base acceptance check is not yet achieved. New cleaner sources below are awaiting user review and have not been connected. Monet's three layers remain; extra birds and music are deferred.
+The existing base files are still mixed recordings, explicitly named Gallery ambience and Café ambience. Turning off Footsteps/Tableware removes only the added event layer; it cannot remove steps or dishes baked into the old base. The mixer uses brief sound names; recording limitations are documented here instead of repeated beside the controls. The strict clean-base acceptance check is not yet achieved. New cleaner sources below are awaiting user review and have not been connected. Monet's three layers remain; extra birds and music are deferred.
 
 ## Fourth-round audition — downloaded, awaiting review, not connected
 
@@ -158,7 +158,7 @@ These are locally hosted previews, not lossless originals. Credits are retained 
 - Production MP3 loop decoding now repairs a last-to-first sample difference greater than -50 dBFS with a 3 ms cosine shoulder on each side. Both endpoint samples meet at their shared midpoint. Interior samples, number of channels, playback rate, source identity and mix gain remain unchanged. The operation cannot increase the sample peak. This addresses numerical discontinuities, not unverified perceptual transitions.
 - Event WAVs are excluded from this repair. The three approved Footsteps excerpts and two approved Tableware variations retain their existing fades, sparse scheduling, shared sliders and source files.
 - Node regression checks cover loop endpoint continuity, unchanged interior, peak ceiling, event cancellation on pause/zero/scene switch and stale asynchronous scene loads. No new audio content approval is implied.
-- Sound mix shows available tracks and necessary mixed-recording explanations. Source-selection and missing-layer status remain on the review page and in this record.
+- Sound mix shows available tracks with concise sound names. Mixed-recording limitations, source-selection and missing-layer status remain on the review page and in this record.
 
 ## Review capability check — 2026-10-25
 

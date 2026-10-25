@@ -10,11 +10,11 @@ export const paintings=[
 
 // Only user-reviewed recordings are connected. One mixed recording = one slider.
 const approved = {
- gallery: ['Gallery space · voices & footsteps', 'gallery', .8],
- nighthawks: ['Quiet café · complete ambience', 'cafe', .75],
- bridge: ['Pond & garden · mono recording', 'pond', .8],
- sunday: ['Summer riverbank · complete ambience', 'river', .8],
- wave: ['Sea waves & breeze', 'sea', .75],
+ gallery: ['Gallery ambience', 'gallery', .8],
+ nighthawks: ['Café ambience', 'cafe', .75],
+ bridge: ['Pond & garden', 'pond', .8],
+ sunday: ['Riverbank', 'river', .8],
+ wave: ['Waves & breeze', 'sea', .75],
 };
 for (const scene of [gallery,...paintings]) {
  const recording=approved[scene.id];
@@ -29,10 +29,10 @@ for(const scene of [gallery,...paintings])scene.pendingTracks=pending[scene.id];
 
 // Second-round user review: four recordings approved; rejected details remain absent.
 const track=(name,file,volume)=>({name,file:`field/${file}.wav`,volume});
-paintings.find(p=>p.id==='golconda').tracks=[track('Rooftop city · distant activity','roof-city',.75),track('Light foliage wind · recorded separately','wind',.12)];
-paintings.find(p=>p.id==='splash').tracks=[track('Morning poolside · water, pump & birds','pool-morning',.8)];
-paintings.find(p=>p.id==='bridge').tracks.push(track('Foliage wind · independent recording','wind',.10),track('Daytime insects · independent recording','insects',.08));
-paintings.find(p=>p.id==='sunday').tracks.push(track('Foliage wind · independent recording','wind',.10));
+paintings.find(p=>p.id==='golconda').tracks=[track('Rooftop city','roof-city',.75),track('Foliage wind','wind',.12)];
+paintings.find(p=>p.id==='splash').tracks=[track('Water, pump & birds','pool-morning',.8)];
+paintings.find(p=>p.id==='bridge').tracks.push(track('Foliage wind','wind',.10),track('Insects','insects',.08));
+paintings.find(p=>p.id==='sunday').tracks.push(track('Foliage wind','wind',.10));
 for(const id of ['golconda','splash'])paintings.find(p=>p.id===id).recordingStatus='user-reviewed';
 paintings.find(p=>p.id==='bridge').pendingTracks=['Separate birds (avoid doubling the base)'];
 paintings.find(p=>p.id==='sunday').pendingTracks=['Distant visitors','Separate birds (avoid doubling the base)'];
