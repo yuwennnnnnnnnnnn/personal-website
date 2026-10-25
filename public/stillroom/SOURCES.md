@@ -56,7 +56,7 @@ Every slider controls a real independent layer. Event variations share one gain.
 
 The user rejected ceramic #214193 (odd sound), footsteps #459964 (does not fit museum footsteps), leaves #686547 (unclear), and pool-calm #702392 (loud dialogue). These remain unconnected. Original rejected ragamuffin city #197211 and underwater #209302 also remain unconnected.
 
-Still missing: independent gallery room tone/quiet footsteps/distant voices, independent café room tone/dishes/street and optional jazz, river crowd/nonduplicating birds, pond nonduplicating birds, isolated sea wind/real wooden boat, rooftop-specific light wind, pool independent circulation/summer wind/nonduplicating birds. No fabricated controls or synthetic main recordings fill these gaps. The approved insects source is short; final loop listening and longer replacements remain useful. The gallery's 44-second loop could also benefit from a longer recording. Local MP3 preview quality is preserved but is not equivalent to original lossless recordings.
+Current gaps: clean gallery room tone and separate distant voices; clean café room tone and distant street; river visitors or boat detail; separate sea wind and real wooden-boat events; rooftop-specific light wind; pool summer air and independently controllable circulation. Footsteps and Tableware are already approved and connected, as documented below. Monet retains its three approved layers; additional birds and music are deferred. No fabricated controls or synthetic main recordings fill these gaps. The approved insects source is short; final loop listening and longer replacements remain useful. The gallery's 44-second loop could also benefit from a longer recording. Local MP3 preview quality is preserved but is not equivalent to original lossless recordings.
 
 Hopper publication permission and licensed higher-resolution Magritte/Hockney images remain outstanding.
 
@@ -107,10 +107,10 @@ All proposed review ranges are inspection starting points, not agent-verified qu
 
 If approved, oliwoli #660480 requires CC BY 4.0 credit including source link, author, license link and processing changes. It was recorded in an empty bar, not a museum. The gondola-station #846380 source describes creaking wood, talking and an approaching motorboat; it is a real marine recording, but not isolated hull wood. Only a quiet user-approved passage could be used. Rooftop #26786 includes city traffic; field wind #72563 and #553733 are explicitly identified as field recordings, not mislabeled rooftop/pool-location audio. Coastal wind #659004 may already contain surf: reject doubling the main sea layer.
 
-### Download gaps and rejected substitutes
+### Historical download gaps and rejected substitutes
 
-- Wooden boat #127006 by bulbastre, CC BY 4.0: https://freesound.org/people/bulbastre/sounds/127006/ . Public high/low previews and source-host fallback repeatedly timed out; original download needs login. Do not claim connected or auditionable locally.
-- Distant murmuring #766658 by blaastaal, CC0: https://freesound.org/people/blaastaal/sounds/766658/ . Public preview download failed repeatedly; recording method/intelligibility remain to be verified. Original download needs login.
+- Wooden boat #127006 by bulbastre, CC BY 4.0: https://freesound.org/people/bulbastre/sounds/127006/ . Initial public-preview downloads timed out. The preview was recovered on 2026-10-10 and is available on the review page; it remains unapproved and unconnected. Original lossless download needs login.
+- Distant murmuring #766658 by blaastaal, CC0: https://freesound.org/people/blaastaal/sounds/766658/ . Initial public-preview downloads failed. The preview was recovered on 2026-10-10 and is available on the review page; recording method and speech intelligibility remain unverified. Original lossless download needs login.
 - #843241 real boat hull: material unspecified and preview download failed; not treated as verified wooden boat.
 - #31574: synthetic arranged ship effect; rejected.
 - #113362: old horse-trailer creaks; rejected as boat substitution.
@@ -118,7 +118,7 @@ If approved, oliwoli #660480 requires CC BY 4.0 credit including source link, au
 - #675784: archival Hollywood effect, field-recording authenticity not established; not selected.
 - #849999: PVC-pipe Foley, not actual wooden boat; rejected.
 
-Later batch: La Grande Jatte distant people/boats and pool independent water circulation. These are not silently filled with birds, streams or synthetic noise.
+La Grande Jatte distant people/boats and pool independent water circulation remain part of the current ten-gap closeout, not a completed or deferred batch. These are not silently filled with birds, streams or synthetic noise.
 
 ## Production delivery encoding
 The processed field WAV masters remain local archives. Production delivers LAME VBR quality-2 MP3 files encoded from those exact masters, preserving channels, existing gain and seam edits. The engine maps field/*.wav mix IDs to field/*.mp3 URLs; existing saved mix settings remain valid. This reduces network transfer without changing sources or track controls. Originals/public previews remain distinguished above.
@@ -159,3 +159,9 @@ These are locally hosted previews, not lossless originals. Credits are retained 
 - Event WAVs are excluded from this repair. The three approved Footsteps excerpts and two approved Tableware variations retain their existing fades, sparse scheduling, shared sliders and source files.
 - Node regression checks cover loop endpoint continuity, unchanged interior, peak ceiling, event cancellation on pause/zero/scene switch and stale asynchronous scene loads. No new audio content approval is implied.
 - Sound mix shows available tracks and necessary mixed-recording explanations. Source-selection and missing-layer status remain on the review page and in this record.
+
+## Review capability check — 2026-10-25
+
+An actual attempt to provide a local recording excerpt to the assistant returned that audio input is unsupported in this session. No perceptual listening, candidate approval or final mix approval was performed. Objective decoding and automated playback tests do not establish whether speech is intelligible, a hum is distracting, or a loop sounds natural.
+
+All twelve source recordings approved in the first three user reviews remain connected with the same track identities and saved-mix keys. The eleven fourth-round candidates remain separate review material. The two recovered previews and the pool-filtration candidate are included in the complete review manifest; download and hosting status are not listening approval.
