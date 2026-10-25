@@ -27,3 +27,41 @@ test('stale scene load cannot create an extra group after a newer scene',async()
  const e=engine();let resolve;e.buffer=f=>f==='slow'?new Promise(r=>resolve=r):Promise.resolve({duration:10});
  const a=e.scene({id:'slow',tracks:[{file:'slow',volume:.3}]});await e.scene({id:'latest',tracks:[{file:'ready',volume:.3}]});resolve({duration:10});await a;assert.equal(e.groups.length,1);assert.equal(e.groups[0].id,'latest');e.destroy(e.groups[0]);
 });
+
+test('first event arrives promptly, then returns to its sparse repeat interval',async t=>{
+ t.mock.timers.enable({apis:['setTimeout']});
+ const e=engine();e.playing=true;const s=scene('cafe');
+ s.tracks[1].firstInterval=[3,6];s.tracks[1].interval=[30,80];
+ await e.scene(s);const g=e.groups[0];t.after(()=>e.destroy(g));
+ t.mock.timers.tick(2999);assert.equal(g.eventSources.size,0);
+ t.mock.timers.tick(3001);assert.equal(g.eventSources.size,1);
+ assert.ok(g.events[0].nextDelay>=30000&&g.events[0].nextDelay<=80001);
+});
+
+test('committing an event slider previews once and replaces the pending event',async t=>{
+ t.mock.timers.enable({apis:['setTimeout']});
+ const e=engine();e.playing=true;const s=scene('cafe');s.tracks[1].interval=[30,80];
+ await e.scene(s);const g=e.groups[0];t.after(()=>e.destroy(g));
+ for(let i=0;i<5;i++){e.setTrack(1,.3+i*.1);e.previewEvent(1);t.mock.timers.tick(40)}
+ t.mock.timers.tick(300);assert.equal(g.eventSources.size,1);
+ assert.equal(g.timers.size,1);assert.ok(g.events[0].nextDelay>=30000);
+ e.previewEvent(1);t.mock.timers.tick(300);assert.equal(g.eventSources.size,1);
+});
+
+test('preview never bypasses pause, zero volume or an outgoing scene',async t=>{
+ t.mock.timers.enable({apis:['setTimeout']});
+ const e=engine();e.playing=true;const s=scene('cafe');s.tracks[1].interval=[30,80];
+ await e.scene(s);const g=e.groups[0];t.after(()=>e.groups.slice().forEach(x=>e.destroy(x)));
+ for(const off of [()=>e.setTrack(1,0),()=>e.setVolume(0),()=>e.toggle(false)]){
+  await e.toggle(true);e.setVolume(.6);e.setTrack(1,.2);e.previewEvent(1);await off();
+  e.previewEvent(1);t.mock.timers.tick(1000);assert.equal(g.eventSources.size,0);assert.equal(g.timers.size,0);
+ }
+ await e.toggle(true);e.previewEvent(1);await e.scene({id:'other',tracks:[{file:'loop',volume:.5}]});
+ t.mock.timers.tick(1000);assert.equal(g.eventSources.size,0);assert.equal(g.timers.size,0);
+});
+
+test('source calibration applies on load and slider changes without overriding saved volume',async()=>{
+ const e=engine();const s=scene('cafe');s.tracks[1].trim=2.5;
+ await e.scene(s);const g=e.groups[0];
+ try{assert.equal(g.tracks[1].gain.value,.5);e.setTrack(1,.4);assert.equal(g.tracks[1].gain.value,1);assert.equal(s.tracks[1].volume,.4);e.setTrack(1,0);assert.equal(g.tracks[1].gain.value,0)}finally{e.destroy(g)}
+});

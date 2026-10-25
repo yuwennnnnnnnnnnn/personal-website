@@ -48,7 +48,7 @@ for(const p of paintings){const [width,height,border,padding]=artworkGeometry[p.
 gallery.tracks[0].name='Gallery ambience';gallery.tracks[0].note='This mixed recording includes voices and footsteps. Footsteps controls the added event layer only.';
 const cafe=paintings.find(p=>p.id==='nighthawks');cafe.tracks[0].name='Café ambience';cafe.tracks[0].note='This mixed recording includes voices and dishes. Tableware controls the added event layer only.';
 gallery.tracks.push({name:'Footsteps',file:'events/footsteps',event:true,variants:[0,1,2].map(i=>`events/footsteps-${i}.wav`),interval:[40,95],volume:.14});
-cafe.tracks.push({name:'Tableware',file:'events/tableware',event:true,variants:[0,1].map(i=>`events/tableware-${i}.wav`),interval:[30,80],volume:.22});
+cafe.tracks.push({name:'Tableware',file:'events/tableware',event:true,variants:[0,1].map(i=>`events/tableware-${i}.wav`),firstInterval:[3,6],interval:[30,80],trim:1.9,volume:.22});
 gallery.pendingTracks=['Clean room tone to replace mixed Gallery ambience','Separate distant voices'];cafe.pendingTracks=['Clean indoor hum to replace mixed Café ambience','Distant street outside'];
 
 // Curatorial priorities: no forced fourth Monet layer or music placeholder.
